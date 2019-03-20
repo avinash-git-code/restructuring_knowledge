@@ -1,0 +1,28 @@
+{
+  "name": "restructuring_knowledge",
+  "version": "1.0.0",
+  "description": "Update knowledge of Design patter, Javascript, CSS, NodeJS, ReactJS, MySql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avinash-git-code/restructuring_knowledge.git"
+  },
+  "keywords": [
+    "design",
+    "pattern",
+    "css",
+    "scss",
+    "nodejs",
+    "reactjs",
+    "mysql"
+  ],
+  "author": "Avinash Chand",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avinash-git-code/restructuring_knowledge/issues"
+  },
+  "homepage": "https://github.com/avinash-git-code/restructuring_knowledge#readme"
+}
