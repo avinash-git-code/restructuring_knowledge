@@ -354,6 +354,8 @@ body { font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 14px; lin
 
 .layout { max-width: 1244px; width: 100%; margin: 0 auto; }
 
+.mg-cont { display: grid; grid-template-columns: 1fr 320px; }
+
 .top_exclusive_cont { text-align: center; width: 100%; border-bottom: 1px dashed #ccc; }
 
 .top_exclusive_cont > a { color: #fff; background: #ed1c24; font-size: 1.1rem; display: inline-block; padding: 10px 20px; text-transform: uppercase; }
@@ -362,49 +364,45 @@ body { font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 14px; lin
 
 .top_exclusive_cont h1 > a { color: #000; font-size: 2.3rem; font-weight: 700; line-height: 1.4; }
 
-.mg-cont { display: grid; grid-template-columns: 1fr 320px; }
-
 .ts_cont { display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 15px; overflow: hidden; }
 
 .ts_cont a { display: block; position: relative; }
 
-.ts_cont .ts_nw_list:not(:last-of-type) { border-bottom: 1px solid #d7d7d7; }
+.ts_nw_list:not(:last-of-type) { border-bottom: 1px solid #d7d7d7; }
 
-.ts_cont .ts_nw_list strong { color: #cd221f; display: inline-block; margin-bottom: 7px; }
+.ts_nw_list strong { color: #cd221f; display: inline-block; margin-bottom: 7px; }
 
-.ts_cont .ts_nw_list h2 { color: #000; font-weight: bold; }
+.ts_nw_list h2 { color: #000; font-weight: bold; }
 
-.ts_cont .ts_nw_list:first-of-type { grid-column: 1/3; grid-row: 1/6; border-bottom: none; overflow: hidden; position: relative; }
+.ts_nw_list:first-of-type { grid-column: 1/3; grid-row: 1/6; border-bottom: none; overflow: hidden; position: relative; }
 
-.ts_cont .ts_nw_list:first-of-type .slick-slide { display: inline-block; }
+.ts_nw_list:first-of-type .slick-slide { display: inline-block; }
 
-.ts_cont .ts_nw_list:first-of-type img { width: 100%; height: 100%; display: block; }
+.ts_nw_list:first-of-type img { width: 100%; height: 100%; display: block; }
 
-.ts_cont .ts_nw_list:first-of-type h2 { width: 100%; position: absolute; bottom: 0; left: 0; color: #fff; font-weight: 400; padding: 10px 15px 25px; background: rgba(0, 0, 0, 0.7); font-size: 1.3rem; line-height: 1.6; }
+.ts_nw_list:first-of-type h2 { width: 100%; position: absolute; bottom: 0; left: 0; color: #fff; font-weight: 400; padding: 10px 15px 15px; background: rgba(0, 0, 0, 0.7); font-size: 1.3rem; line-height: 1.6; }
 
-.ts_cont .ts_nw_list:first-of-type h2 strong { color: #fff; font-size: 1rem; background: #cd221f; position: absolute; left: 0; top: -30px; padding: 5px 10px; height: 30px; }
+.ts_nw_list:first-of-type h2 strong { color: #fff; font-size: 1rem; background: #cd221f; position: absolute; left: 0; top: -30px; padding: 5px 10px; height: 30px; }
 
-.ts_cont .ts_nw_list .slick-dots { position: absolute; width: 100%; left: 0; bottom: 0px; text-align: center; padding: 10px 0px 5px; }
+.ts_nw_list .slick-dots { position: absolute; width: 100%; left: 0; bottom: 0px; text-align: center; padding: 10px 0px 12px; }
 
-.ts_cont .ts_nw_list .slick-dots li { display: inline-block; margin: 0 5px; position: relative; width: 14px; height: 14px; }
+.ts_nw_list .slick-dots li { display: inline-block; margin: 0 5px; position: relative; width: 14px; height: 14px; }
 
-.ts_cont .ts_nw_list .slick-dots li.slick-active button { background: white; }
+.ts_nw_list .slick-dots li.slick-active button { background: white; }
 
-.ts_cont .ts_nw_list .slick-dots li button { width: 100%; height: 100%; background: rgba(255, 255, 255, 0.6); border: none; position: absolute; font-size: 0; line-height: 0; left: 0; top: 0; border-radius: 50%; }
+.ts_nw_list .slick-dots li button { width: 100%; height: 100%; background: rgba(255, 255, 255, 0.6); border: none; position: absolute; font-size: 0; line-height: 0; left: 0; top: 0; border-radius: 50%; }
 
-.ts_cont .ts_nw_list .slick-dots li button:focus { outline: none; }
+.ts_nw_list .slick-dots li button:focus { outline: none; }
 
-.carousel_cont { overflow: hidden; position: relative; width: 100%; }
+.carousel_cont { overflow: hidden; display: block; position: relative; width: 100%; }
 
 .carousel_cont h3 { color: #000; font-size: 1.2rem; font-weight: 700; margin: 5px 0; }
 
 .carousel_cont .slick-slide { display: inline-block; }
 
-.left-section { width: 100%; }
+#carousel_cont { width: 924px; overflow: hidden; }
 
-.carousel_list { overflow: hidden; width: 100%; }
-
-.carousel_list .slick-list { width: 100%; overflow: hidden; }
+.carousel_list .slick-list { overflow: hidden; }
 
 .carousl_data { display: block; }
 

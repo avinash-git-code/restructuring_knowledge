@@ -7,6 +7,7 @@ $(document).ready(function(){
     });
 
 
+
     // $('.carousel_list').slick({
     //     dots: true,
     //     infinite: false,
@@ -15,12 +16,17 @@ $(document).ready(function(){
     //     slideToShow:3,
     //     slidToScroll:1
     // });
-    // $('#carousel_cont .carousel_list').slick({
-    //   infinite: true,
-    //   slidesToShow: 3,
-    //   slidesToScroll: 1,
-    //   infinite:false
-    // });
+    $('#carousel_cont .carousel_list').slick({
+         infinite: true,
+         slidesToShow: 3,
+         slidesToScroll: 3
+      });
+//
+//     $('.multiple-items').slick({
+//   infinite: true,
+//   slidesToShow: 3,
+//   slidesToScroll: 3
+// });
 
 
 });

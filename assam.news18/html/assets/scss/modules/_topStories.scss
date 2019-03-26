@@ -1,0 +1,99 @@
+.ts_cont{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  overflow: hidden;
+  a{
+    display: block;
+    position: relative;
+  }
+}
+
+.ts_nw_list{
+  &:not(:last-of-type){
+    border-bottom: 1px solid #d7d7d7;
+  }
+  strong{
+    color: #cd221f;
+    display: inline-block;
+    margin-bottom: 7px;
+  }
+  h2{
+    color: #000;
+    font-weight: bold;
+  }
+  &:first-of-type{
+    grid-column: 1/3;
+    grid-row: 1/6;
+    border-bottom: none;
+    overflow: hidden;
+    position: relative;
+    .slick-slide {
+      display: inline-block;
+    }
+    img{
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    h2{
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: #fff;
+      font-weight: 400;
+      padding: 10px 15px 15px;
+      background: rgba(0,0,0,.7);
+      font-size: 1.3rem;
+      line-height: 1.6;
+      strong{
+        color: #fff;
+        font-size: 1rem;
+        background: #cd221f;
+        position: absolute;
+        left: 0;
+        top:-30px;
+        padding: 5px 10px;
+        height: 30px;
+
+      }
+    }
+  }
+  .slick-dots{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0px;
+    text-align: center;
+    padding: 10px 0px 12px;
+    li{
+      display: inline-block;
+      margin: 0 5px;
+      position: relative;
+      width: 14px;
+      height: 14px;
+      &.slick-active{
+        button{
+        background: rgba(255,255,255,1);
+        }
+      }
+      button{
+        width:100%;
+        height: 100%;
+        background: rgba(255,255,255,.6);
+        border: none;
+        position: absolute;
+        font-size: 0;
+        line-height: 0;
+        left: 0;
+        top:0;
+        border-radius: 50%;
+
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+  }
+}

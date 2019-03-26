@@ -1,0 +1,25 @@
+.top_exclusive_cont{
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px dashed #ccc;
+  > a{
+    color: #fff;
+    background: #ed1c24;
+    font-size: 1.1rem;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
+  h1{
+    max-width: 80%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    > a{
+      color: #000;
+      font-size: 2.3rem;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+  }
+}
