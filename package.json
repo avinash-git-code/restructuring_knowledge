@@ -4,6 +4,7 @@
   "description": "Update knowledge of Design patter, Javascript, CSS, NodeJS, ReactJS, MySql",
   "main": "index.js",
   "scripts": {
+    "compile:sass": "node-sass --watch restructuringKnowledgeFrontEnd/assets/scss/ -o restructuringKnowledgeFrontEnd/assets/css --output-style compact",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +27,8 @@
   },
   "homepage": "https://github.com/avinash-git-code/restructuring_knowledge#readme",
   "devDependencies": {
-    "gulp": "^4.0.0"
+    "gulp": "^4.0.0",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.11.0"
   }
 }

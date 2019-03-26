@@ -1,0 +1,21 @@
+// helper classes start
+.clearfix{
+  &:after,
+  &:before{
+    content: "";
+    display: block;
+    width: 100%;
+    line-height: 0;
+    font-size: 0;
+    visibility: hidden;
+    clear: both;
+  }
+}
+// helper classes end 
+
+
+.layout{
+  max-width:1244px;
+  width:100%;
+  margin: 0 auto;
+}
