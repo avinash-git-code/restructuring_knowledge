@@ -1,14 +1,28 @@
 .carousel_cont{
   overflow: hidden;
   position: relative;
-  width: 924px;  
+  width: 924px;
   .slick-slide {
     display: inline-block;
+  }
+  .slick-current{
+    .carousl_data{
+      padding-right: 15px;
+    }
+    + div {
+      &.slick-active{
+        .carousl_data{
+          padding-right: 15px;
+        }
+      }
+    }
+  }
+  .slick-active{
   }
 }
 
 .carousl_data{
-  padding-right: 15px;
+  // padding-right: 15px;
   figure{
     position: relative;
     height: 200px;
@@ -44,7 +58,7 @@
   background: #fff;
   padding: 0;
   position: absolute;
-  right:15px;
+  right:0px;
   top:5px;
   &.slick-disabled{
     opacity: .5;
@@ -54,7 +68,7 @@
     outline: none;
   }
   &.cust-prev{
-    right:45px;
+    right:30px;
     transform: rotate(180deg);
   }
   span{

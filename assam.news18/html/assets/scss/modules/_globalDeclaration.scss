@@ -45,7 +45,7 @@ h3{
   color: #000;
   font-size: 1.2rem;
   font-weight: 700;
-  margin: 5px 0; 
+  margin: 5px 0;
 }
 h5{
   font-size: 22px;
@@ -57,4 +57,12 @@ h5{
 }
 .bold{
   font-weight: 700;
+}
+.slider_stories_cont{
+  .slick-list{
+    overflow: hidden;
+  }
+  .slick-slide{
+    display: inline-block;
+  }
 }
