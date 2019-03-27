@@ -356,6 +356,14 @@ body { font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 14px; lin
 
 .mg-cont { display: grid; grid-template-columns: 1fr 320px; }
 
+h3 { color: #000; font-size: 1.2rem; font-weight: 700; margin: 5px 0; }
+
+h5 { font-size: 22px; color: #000; }
+
+.uppercase { text-transform: uppercase; }
+
+.bold { font-weight: 700; }
+
 .top_exclusive_cont { text-align: center; width: 100%; border-bottom: 1px dashed #ccc; }
 
 .top_exclusive_cont > a { color: #fff; background: #ed1c24; font-size: 1.1rem; display: inline-block; padding: 10px 20px; text-transform: uppercase; }
@@ -384,9 +392,9 @@ body { font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 14px; lin
 
 .ts_nw_list:first-of-type h2 strong { color: #fff; font-size: 1rem; background: #cd221f; position: absolute; left: 0; top: -30px; padding: 5px 10px; height: 30px; }
 
-.ts_nw_list .slick-dots { position: absolute; width: 100%; left: 0; bottom: 0px; text-align: center; padding: 10px 0px 12px; }
+.ts_nw_list .slick-dots { position: absolute; width: 100%; left: 0; bottom: 0px; text-align: center; padding: 5px 0px 6px; }
 
-.ts_nw_list .slick-dots li { display: inline-block; margin: 0 5px; position: relative; width: 14px; height: 14px; }
+.ts_nw_list .slick-dots li { display: inline-block; margin: 0 5px; position: relative; width: 12px; height: 12px; }
 
 .ts_nw_list .slick-dots li.slick-active button { background: white; }
 
@@ -394,17 +402,11 @@ body { font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 14px; lin
 
 .ts_nw_list .slick-dots li button:focus { outline: none; }
 
-.carousel_cont { overflow: hidden; display: block; position: relative; width: 100%; }
-
-.carousel_cont h3 { color: #000; font-size: 1.2rem; font-weight: 700; margin: 5px 0; }
+.carousel_cont { overflow: hidden; position: relative; width: 924px; }
 
 .carousel_cont .slick-slide { display: inline-block; }
 
-#carousel_cont { width: 924px; overflow: hidden; }
-
-.carousel_list .slick-list { overflow: hidden; }
-
-.carousl_data { display: block; }
+.carousl_data { padding-right: 15px; }
 
 .carousl_data figure { position: relative; height: 200px; }
 
@@ -412,4 +414,54 @@ body { font-family: 'Roboto', Arial, Helvetica, sans-serif; font-size: 14px; lin
 
 .carousl_data figure strong { position: absolute; background: #cd221f; color: #fff; font-size: 1.1rem; padding: 2px 10px; left: 0; bottom: 10px; font-weight: normal; }
 
-.carousl_data figcaption { font-size: 1rem; font-weight: bold; color: #000; margin-top: 10px; }
+.carousl_data h3 { font-size: 1rem; font-weight: bold; color: #000; margin-top: 10px; }
+
+.snp { width: 20px; height: 20px; border: 1px solid #b5abab; background: #fff; padding: 0; position: absolute; right: 15px; top: 5px; }
+
+.snp.slick-disabled { opacity: .5; cursor: not-allowed; }
+
+.snp:focus { outline: none; }
+
+.snp.cust-prev { right: 45px; transform: rotate(180deg); }
+
+.snp span { width: 100%; height: 100%; display: block; position: relative; }
+
+.snp span:after, .snp span:before { width: 8px; height: 1.5px; background: #353535; content: ""; position: absolute; right: 0; top: 0; }
+
+.snp span:after { transform: rotate(-45deg); top: 11px; right: 4px; }
+
+.snp span:before { transform: rotate(45deg); right: 4px; top: 6px; }
+
+.ms_cont { display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 10px; }
+
+.ms_cont > div a { display: block; height: 100%; }
+
+.ms_cont > div:first-of-type { grid-column: 1/3; grid-row: 1/4; }
+
+.ms_cont > div:first-of-type img { width: 100%; height: 100%; display: block; }
+
+.ms_cont > div:first-of-type figure { position: relative; height: 100%; }
+
+.ms_cont > div:first-of-type h4 { color: #fff; position: absolute; width: 100%; left: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); font-size: 1.2rem; padding: 10px 10px; }
+
+.ms_cont > div:nth-of-type(2), .ms_cont > div:nth-of-type(3), .ms_cont > div:nth-of-type(4), .ms_cont > div:nth-of-type(6) { grid-column: 3/5; }
+
+.ms_cont > div:nth-of-type(5) { grid-column: 1/3; }
+
+.ms_cont > div:not(:first-of-type) a { display: grid; grid-template-columns: 130px 1fr; grid-gap: 15px; }
+
+.ms_cont > div:not(:first-of-type) figure { height: 100%; }
+
+.ms_cont > div:not(:first-of-type) h4 { font-size: .9rem; color: #000; font-weight: 600; line-height: 1.5; }
+
+.ms_cont > div:not(:first-of-type) img { width: 100%; height: 100%; object-fit: cover; }
+
+.col_story { display: grid; grid-template-columns: repeat(7, 1fr); grid-gap: 10px; }
+
+.col_story a { display: block; height: 100%; }
+
+.col_story > div { grid-column: 3/6; }
+
+.col_story > div:first-of-type { grid-column: 1/3; grid-row: 1/6; }
+
+.col_story > div:last-of-type { grid-column: 6/8; grid-row: 1/3; }

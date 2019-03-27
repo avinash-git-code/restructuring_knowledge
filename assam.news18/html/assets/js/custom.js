@@ -6,27 +6,11 @@ $(document).ready(function(){
         arrows:false
     });
 
-
-
-    // $('.carousel_list').slick({
-    //     dots: true,
-    //     infinite: false,
-    //     speed: 500,
-    //     arrows:true,
-    //     slideToShow:3,
-    //     slidToScroll:1
-    // });
-    $('#carousel_cont .carousel_list').slick({
-         infinite: true,
+    $('.carousel_list').slick({
+         infinite: false,
          slidesToShow: 3,
-         slidesToScroll: 3
+         slidesToScroll: 1,
+         prevArrow: '<button type="button" class="snp cust-prev"><span></span></button>',
+         nextArrow: '<button type="button" class="snp cust-next"><span></span></button>'
       });
-//
-//     $('.multiple-items').slick({
-//   infinite: true,
-//   slidesToShow: 3,
-//   slidesToScroll: 3
-// });
-
-
 });

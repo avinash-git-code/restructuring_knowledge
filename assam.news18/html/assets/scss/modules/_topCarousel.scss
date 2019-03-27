@@ -1,33 +1,14 @@
 .carousel_cont{
   overflow: hidden;
-  display: block;
   position: relative;
-  width: 100%;
-  h3{
-    color: #000;
-    font-size: 1.2rem;
-    font-weight: 700;
-    margin: 5px 0;
-  }
+  width: 924px;  
   .slick-slide {
     display: inline-block;
   }
 }
 
-#carousel_cont{
-  width: 924px;
-  overflow: hidden;
-}
-
-.carousel_list {
-  // width: 924px;
-  .slick-list {
-    overflow: hidden;
-  }
-}
-
 .carousl_data{
-  display:block;
+  padding-right: 15px;
   figure{
     position: relative;
     height: 200px;
@@ -47,10 +28,59 @@
       font-weight: normal;
     }
   }
-  figcaption{
+  h3{
     font-size: 1rem;
     font-weight: bold;
     color: #000;
     margin-top: 10px;
+  }
+}
+
+
+.snp{
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b5abab;
+  background: #fff;
+  padding: 0;
+  position: absolute;
+  right:15px;
+  top:5px;
+  &.slick-disabled{
+    opacity: .5;
+    cursor: not-allowed;
+  }
+  &:focus{
+    outline: none;
+  }
+  &.cust-prev{
+    right:45px;
+    transform: rotate(180deg);
+  }
+  span{
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    &:after,
+    &:before{
+      width: 8px;
+      height: 1.5px;
+      background: #353535;
+      content: "";
+      position: absolute;
+      right:0;
+      top:0;
+    }
+    &:after{
+      transform:rotate(-45deg);
+      top: 11px;
+      right: 4px;
+    }
+    &:before{
+      transform:rotate(45deg);
+      right: 4px;
+      top: 6px;
+    }
   }
 }
