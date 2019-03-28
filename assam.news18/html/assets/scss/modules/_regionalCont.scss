@@ -1,0 +1,47 @@
+.regional_cont{
+
+}
+
+.regional-head{
+  display: flex;
+  justify-content: space-between;
+  h3{
+    font-weight: bold;
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  a{
+    font-size: 1rem;
+    color: #000;
+    font-weight: 500;
+  }
+  li{
+    margin-left: 50px;
+    border-left:1px solid #b2b2b2;
+    padding-left: 50px;
+    &:first-child{
+      border-left: 0;
+    }
+    &.active{
+      a{
+        color: #ce2220;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.regional_list{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 15px;
+  a{
+    &:first-of-type{
+      grid-column: 1/4;
+      grid-row: 1/4; 
+    }
+  }
+}

@@ -6,23 +6,22 @@
     display: inline-block;
   }
   .slick-current{
-    .carousl_data{
-      padding-right: 15px;
-    }
-    + div {
+    + div + div {
       &.slick-active{
         .carousl_data{
-          padding-right: 15px;
+          padding-right: 0px;
         }
       }
     }
   }
-  .slick-active{
-  }
 }
 
 .carousl_data{
-  // padding-right: 15px;
+  padding-right: 15px;
+  transition: all .3s;
+  &:focus{
+    outline: none;
+  }
   figure{
     position: relative;
     height: 200px;

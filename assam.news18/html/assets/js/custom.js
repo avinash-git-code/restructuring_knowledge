@@ -7,30 +7,30 @@ $(document).ready(function(){
     });
 
     $('.carousel_list').slick({
-         infinite: true,
-         slidesToShow: 3,
-         slidesToScroll: 1,
-         prevArrow: '<button type="button" class="snp cust-prev"><span></span></button>',
-         nextArrow: '<button type="button" class="snp cust-next"><span></span></button>'
-      });
+        autoplay:true,
+        autoPlaySpeed: 5000,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="snp cust-prev"><span></span></button>',
+        nextArrow: '<button type="button" class="snp cust-next"><span></span></button>'
+    });
 
-      // $('.slider_stories_cont ul').slick({
-      //      infinite: true,
-      //      slidesToShow: 1,
-      //      slidesToScroll: 1
-      //   });
-
-      $(function() {
+    $(function() {
     $('.slider_stories_cont ul').on('init', function(event, slick) {
-      $(this).append('<div class="slick-counter"><span class="current"></span> of <span class="total"></span></div>');
+      $(this).append('<div class="slick-slide-info"><span class="current"></span> of <span class="total"></span></div>');
       $('.current').text(slick.currentSlide + 1);
       $('.total').text(slick.slideCount);
     })
     .slick({
-      autoplay: true,
-      autoplaySpeed: 3000,
+      autoplay: false,
+      // autoplaySpeed: 3000,
       infinite: true,
-      arrows: true
+      arrows: true,
+      prevArrow: '<button type="button" class="sli-sto-btn cust-prev"><span></span></button>',
+      nextArrow: '<button type="button" class="sli-sto-btn cust-next"><span></span></button>'
+      // fade: true,
+      // cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)'
     })
     .on('beforeChange', function(event, slick, currentSlide, nextSlide) {
       $('.current').text(nextSlide + 1);
