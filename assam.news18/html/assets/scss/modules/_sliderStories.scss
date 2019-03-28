@@ -31,10 +31,10 @@
   position: absolute;
   width: 28px;
   height: 36px;
-  background: #000;
+  background: rgba(0,0,0,.7);
   border:none;
   z-index: 1;
-  transform: translateY(-140%);   
+  transform: translateY(-140%);
   top:50%;
   &:focus{
     outline: none;
@@ -44,6 +44,37 @@
   }
   &.cust-next{
     right: 0;
+  }
+  &:after,
+  &:before{
+    width:60%;
+    height: 2px;
+    background: #fff;
+    content: "";
+    position: absolute;
+    left: 6px;
+  }
+  &.cust-prev{
+    border-radius: 0 6px 6px 0;
+    &:after{
+      transform: rotate(45deg);
+      bottom: 11px;
+    }
+    &:before{
+      transform: rotate(-45deg);
+      top: 12px;
+    }
+  }
+  &.cust-next{
+    border-radius: 6px 0 0 6px;
+    &:after{
+      transform: rotate(-45deg);
+      bottom: 12px;
+    }
+    &:before{
+      transform: rotate(45deg);
+      top:11px;
+    }
   }
 }
 .slick-slide-info{
