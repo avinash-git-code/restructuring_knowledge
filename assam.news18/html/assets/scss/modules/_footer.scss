@@ -145,7 +145,7 @@ footer{
   h3{
     border:none;
     padding: 5px 0;
-    font-size: 1.6em;  
+    font-size: 1.6em;
     &:after{
       display: none;
     }
@@ -210,6 +210,11 @@ footer{
           transform: rotate(-45deg);
           top:12px;
         }
+      }
+    }
+    &:last-of-type{
+      ul{
+        margin-left: 15px; 
       }
     }
   }
