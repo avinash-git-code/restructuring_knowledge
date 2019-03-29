@@ -145,6 +145,7 @@ footer{
   h3{
     border:none;
     padding: 5px 0;
+    font-size: 1.6em;  
     &:after{
       display: none;
     }
@@ -156,6 +157,23 @@ footer{
       border-right: 1px solid #313131;
       margin: 0 15px;
       padding: 0 15px;
+      ul{
+        margin-bottom: 30px;
+      }
+      li{
+        background: #0c0c0c;
+        border-left: 3px solid #ed3f3c;
+        margin-bottom: 5px;
+      }
+      a{
+        color: #818181;
+        font-size: 1.1em;
+        padding: 10px;
+        display: block;
+        font-family: 'Roboto';
+        font-weight: 300;
+        line-height: 1.5;
+      }
     }
     &:first-of-type,
     &:last-of-type{
