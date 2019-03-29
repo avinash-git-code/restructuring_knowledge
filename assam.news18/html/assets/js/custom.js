@@ -36,4 +36,15 @@ $(document).ready(function(){
       $('.current').text(nextSlide + 1);
     });
   });
+
+  $('.tv-slider').slick({
+    dots: false,
+    infinite: true,
+    speed: 1000, 
+    slidesToShow: 7,
+    slidesToScroll: 1,
+    autoplay:true,
+    prevArrow: '<button type="button" class="footer-tv-slides cust-prev" title="Pervious"></button>',
+    nextArrow: '<button type="button" class="footer-tv-slides cust-next" title="Next"></button>'
+  });
 });
