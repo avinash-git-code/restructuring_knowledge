@@ -14,11 +14,20 @@
       }
     }
   }
+  .js-error{
+    a{
+      &:nth-of-type(n+4){     
+        display: none;
+      }
+    }
+  }
 }
 
 .carousl_data{
   padding-right: 15px;
   transition: all .3s;
+  display: inline-block;
+  width: 33%;
   &:focus{
     outline: none;
   }

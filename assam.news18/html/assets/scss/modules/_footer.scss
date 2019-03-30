@@ -39,8 +39,17 @@ footer{
   padding: 10px 20px;
   overflow: hidden;
   position: relative;
+  &.js-error{
+    width: 100%;
+    text-align: center;
+    a{
+      &:nth-of-type(n+10){
+        display:none;
+      }
+    }
+  }
   a{
-    float: left;
+    display: inline-block;
     text-align: center;
     padding: 0 15px;
     border-right: 1px solid #303030;
@@ -180,6 +189,7 @@ footer{
       ul{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        margin-left: 15px;
       }
       li{
         margin-bottom: 10px;
@@ -210,11 +220,6 @@ footer{
           transform: rotate(-45deg);
           top:12px;
         }
-      }
-    }
-    &:last-of-type{
-      ul{
-        margin-left: 15px; 
       }
     }
   }

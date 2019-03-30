@@ -10,6 +10,13 @@
 }
 
 .ts_nw_list{
+  &.js-error{
+    a{
+      &:nth-of-type(n+2){          
+        display:none;
+      }
+    }
+  }
   &:not(:last-of-type){
     border-bottom: 1px solid #d7d7d7;
   }
@@ -72,7 +79,7 @@
       margin: 0 5px;
       position: relative;
       width: 12px;
-      height: 12px; 
+      height: 12px;
       &.slick-active{
         button{
         background: rgba(255,255,255,1);
