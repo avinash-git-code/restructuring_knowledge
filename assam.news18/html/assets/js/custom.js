@@ -1,4 +1,14 @@
 $(document).ready(function(){
+    $(document).on('click', '#nav-hm-btn', function(){
+      if( $(this).hasClass('cross-btn') ){
+        $(this).removeClass('cross-btn')
+        .attr('title', 'Menu button');
+      }else{
+        $(this).addClass('cross-btn')
+        .attr('title', 'Close menu'); 
+      }
+    });
+
     $('.ts_nw_list:first-of-type').slick({
         dots: true,
         infinite: false,
