@@ -1,6 +1,10 @@
 .lan-top-cont{
   background: #f5f5f5;
   border-top: 4px solid #e1261d;
+  .layout{
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .lang-list{
@@ -27,6 +31,42 @@
   justify-content: space-between;
   padding: 10px 0;
   align-items: center;
+}
+
+.top-social-cont{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  a{
+    margin-left: 10px; 
+  }
+  i{
+    width: 24px;
+    height: 24px;
+    background: url(../images/sprit-sob-3.png) -999% top no-repeat;
+    display: block;
+    &.fb{
+      background-position: left 0px;
+    }
+    &.tw{
+      background-position: -26px 0px;
+    }
+    &.inst{
+      background-position: -52px 0px;
+    }
+    &.yt{
+      background-position: -78px 0px;
+    }
+    &.in{
+      background-position: -102px 0px;
+    }
+    &.ap{
+      background-position: -128px 0px;
+    }
+    &.an{
+      background-position: -154px 0px;
+    }
+  }
 }
 
 .nav-cont{
