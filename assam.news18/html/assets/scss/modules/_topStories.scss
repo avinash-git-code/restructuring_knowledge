@@ -11,8 +11,8 @@
 
 .ts_nw_list{
   &.js-error{
-    a{
-      &:nth-of-type(n+2){          
+    >a{
+      &:nth-of-type(n+2){
         display:none;
       }
     }

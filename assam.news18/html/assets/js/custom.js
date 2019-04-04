@@ -5,7 +5,7 @@ $(document).ready(function(){
         .attr('title', 'Menu button');
       }else{
         $(this).addClass('cross-btn')
-        .attr('title', 'Close menu'); 
+        .attr('title', 'Close menu');
       }
     });
 
@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
 
     $('.carousel_list').slick({
-        autoplay:true,
+        autoplay:false,
         autoPlaySpeed: 5000,
         infinite: true,
         slidesToShow: 3,

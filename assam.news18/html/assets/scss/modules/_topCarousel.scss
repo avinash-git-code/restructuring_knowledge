@@ -3,20 +3,21 @@
   position: relative;
   width: 924px;
   .slick-slide {
-    display: inline-block;
+      margin: 0 10px;
+      display: inline-block;
   }
-  .slick-current{
-    + div + div {
-      &.slick-active{
-        .carousl_data{
-          padding-right: 0px;
-        }
-      }
-    }
+  .slick-list {
+      margin: 0 -10px;
   }
   .js-error{
-    a{
-      &:nth-of-type(n+4){     
+    >a{
+      &:first-child{
+        padding-right: 15px;
+        + a {
+          padding-right: 15px;
+        }
+      }
+      &:nth-of-type(n+4){
         display: none;
       }
     }
@@ -24,8 +25,6 @@
 }
 
 .carousl_data{
-  padding-right: 15px;
-  transition: all .3s;
   display: inline-block;
   width: 33%;
   &:focus{

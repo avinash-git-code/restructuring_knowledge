@@ -1,8 +1,8 @@
 .slider_stories_cont{
   &.js-error{
     ul{
-      li{
-        &:nth-of-type(n+2){       
+      >li{
+        &:nth-child(n+2){
           display: none;
         }
       }
