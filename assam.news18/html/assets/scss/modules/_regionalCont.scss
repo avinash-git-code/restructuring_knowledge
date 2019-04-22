@@ -43,13 +43,16 @@
     &:first-of-type{
       grid-column: 1/4;
       grid-row: 1/4;
+      figure{
+        height: 500px;  
+      }
       h6{
         font-size: 1.3rem;
       }
     }
   }
   figure{
-    height: 100%;
+    height: 156px;
   }
   img{
     display: block;

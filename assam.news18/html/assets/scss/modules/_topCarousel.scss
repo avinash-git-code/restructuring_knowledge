@@ -1,10 +1,13 @@
 .carousel_cont{
   overflow: hidden;
   position: relative;
+  .slick-track{
+    @extend .clearfix;
+  }
   width: 924px;
   .slick-slide {
       margin: 0 10px;
-      display: inline-block;
+      float: left;
   }
   .slick-list {
       margin: 0 -10px;

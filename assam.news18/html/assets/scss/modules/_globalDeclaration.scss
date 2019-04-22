@@ -25,12 +25,7 @@
 @include mp-loop('.p-l-', 'padding-left');
 @include mp-loop('.p-x-', 'padding');
 // helper classes end
-body{
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 1.3;
-  color: #25092e;
-}
+body{font-family:'noto_sans_bengaliregular', 'Arial' , 'Roboto' , 'Helvetica', 'sans-serif';font-size:14px;line-height:1.3;color:#25092e} 
 
 .layout{
   max-width:1244px;

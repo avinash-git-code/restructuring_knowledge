@@ -1,4 +1,9 @@
 .slider_stories_cont{
+  h5{
+    a{
+      color: #000;
+    }
+  }
   &.js-error{
     ul{
       >li{
@@ -56,7 +61,7 @@
   }
   &:after,
   &:before{
-    width:60%;
+    width:17px; 
     height: 2px;
     background: #fff;
     content: "";
