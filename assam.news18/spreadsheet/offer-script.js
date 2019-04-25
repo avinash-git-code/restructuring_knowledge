@@ -42,3 +42,10 @@ oc.addEventListener('click', function(){
 emailsave.addEventListener('click', function(){
   event.stopPropagation();
 });
+
+
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
