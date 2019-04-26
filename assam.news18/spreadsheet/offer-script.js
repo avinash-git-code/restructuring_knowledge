@@ -1,5 +1,5 @@
 // Set the date we're counting down to
-var countDownDate = new Date("April 23, 2019 22:40:00").getTime();
+var countDownDate = new Date("April 26, 2019 22:40:00").getTime();
 // Update the count down every 1 second
 var x = setInterval(function() {
 // Get todays date and time
@@ -7,13 +7,12 @@ var now = new Date().getTime();
 // Find the distance between now and the count down date
 var distance = countDownDate - now;
 // Time calculations for days, hours, minutes and seconds
-var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+// var days = Math.floor(distance / (1000 * 60 * 60 * 24));
 var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 // Display the result in the element with id="demo"
-document.getElementById("offer-timer").innerHTML = days + "d " + hours + "h "
-+ minutes + "m " + seconds + "s " ;
+document.getElementById("offer-timer").innerHTML = /*days + ":" +*/ hours + ":" + minutes + ":" + seconds + "" ;
 // If the count down is finished, write some text
 if (distance < 0) {
   clearInterval(x);
@@ -44,8 +43,31 @@ emailsave.addEventListener('click', function(){
 });
 
 
-function myFunction() {
-  var x = document.getElementById("snackbar");
-  x.className = "show";
-  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+function notifyMsg() {
+  var x = document.getElementById("toastmsg-cont");
+  var email = document.getElementById('offer-email');
+  var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if (!filter.test(email.value)) {
+    // alert('Please provide a valid email address');
+    x.innerHTML = 'Please provide valid email';
+    x.className = "error";
+    email.focus;
+    // return false;
+    setTimeout(function(){ x.className = x.className.replace("error", ""); }, 3000);
+  }else{
+    x.innerHTML = 'Your email is submited';
+    x.className = "success";
+    setTimeout(function(){ x.className = x.className.replace("success", ""); }, 3000);
+  }
+}
+
+
+function checkEmail() {
+  var email = document.getElementById('txtEmail');
+  var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+  if (!filter.test(email.value)) {
+    alert('Please provide a valid email address');
+    email.focus;
+    return false;
+  }
 }

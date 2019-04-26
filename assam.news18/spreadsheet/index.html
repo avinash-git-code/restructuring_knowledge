@@ -7,18 +7,25 @@
   </head>
   <body>
     <div class="offer-cont" id="oc">
-      <img src="add-bg.jpg" alt="">
-      <strong id="offer-timer" class="offer-timer"></strong>
-      <div class="form-cont">
-        <div class="form-input-cont" id="form-input-cont">
-          <input type="text" placeholder="" id="offer-email">
-          <span id="offer-animation">अपना ईमेल एड्रेस भरे</span>
+      <a class="offer-top-cont" href="javascript:void(0);">
+        <img src="offer-top-image.jpg" alt="">
+        <strong id="offer-timer" class="offer-timer"></strong>
+      </a>
+      <div class="bottom-cont">
+        <a href="javascript:void(0);">
+          <img src="sponser-logo.png" alt="">
+        </a>
+        <div class="form-cont">
+          <div class="form-input-cont" id="form-input-cont">
+            <input type="text" placeholder="" id="offer-email">
+            <span id="offer-animation">अपना ईमेल एड्रेस भरे |</span>
+          </div>
+          <button id="email-save" onclick="notifyMsg()">NOTIFY&nbsp;ME</button>
         </div>
-        <button id="email-save">NOTIFY&nbsp;ME</button>
       </div>
+      <div id="toastmsg-cont" class="provide-email"></div>
     </div>
-    <button onclick="myFunction()">Show Snackbar</button>
-    <div id="snackbar">Some text some message..</div>
+    <!-- <button onclick="">Show Snackbar</button> -->
     <script src="offer-script.js"></script>
   </body>
 </html>
