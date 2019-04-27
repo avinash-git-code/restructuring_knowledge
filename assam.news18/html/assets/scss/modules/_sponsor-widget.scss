@@ -1,0 +1,49 @@
+.sponsor-logo-strip {
+  height: 96px;
+  background: url(http://images.hindi.news18.com/ibnkhabar/uploads/2019/04/slogo-bg.jpg)
+    repeat-x 0 0;
+}
+.sponsor-logo-strip .sloinner h2 {
+  font-size: 14px;
+  font-weight: normal;
+  color: #6d6d6d;
+  text-transform: uppercase;
+  font-style: italic;
+  padding-bottom: 10px;
+  font-family: sans-serif;
+}
+.sponsor-logo-strip .sloinner {
+  max-width: 1244px;
+  width: 100%;
+  padding-top: 16px;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+.sponsor-logo-strip .sloinner .lse-slogo {
+}
+.sponsor-logo-strip .sloinner ul {
+  display: flex;
+  list-style: none;
+  padding: 7px 0 0 65px;
+}
+.sponsor-logo-strip .sloinner ul li {
+  padding-right: 34px;
+}
+.sponsor-logo-strip .sloinner ul li:last-child {
+  padding-right: 0px;
+}
+.sponsor-logo-strip .sloinner ul li a {
+  display: block;
+}
+.sponsor-logo-strip .sloinner ul li img {
+  border: 1px solid #e3e3e3;
+}
+.sponsor-logo-strip .sloinner ul li.stxt {
+  color: #d4d4d4;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  padding-right: 15px;
+}
