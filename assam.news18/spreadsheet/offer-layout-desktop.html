@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Google Sheets API Quickstart</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="offer-desktop.css">
+</head>
+
+<body>
+  <div class="offer-cont" id="oc">
+      <a class="offer-top-cont" href="javascript:void(0);">
+        <img src="https://images.news18.com/static_news18/pix/ibnhome/news18/dmpofferadd/images/desktop-offer-banner.jpg" alt="">
+        <strong id="offer-timer" class="offer-timer"></strong>
+      </a>
+      <div class="bottom-cont">
+        <a href="javascript:void(0);">
+          <img src="https://images.news18.com/static_news18/pix/ibnhome/news18/dmpofferadd/images/sponser-logo.png" alt="">
+        </a>
+        <form class="form-cont" id="sheets">
+          <div class="form-input-cont" id="form-input-cont">
+            <input id="email" name="email" type="text" placeholder="" autocomplete="off">
+            <!-- <input id="date_time" name="date_time" type="text" value="=NOW()" placeholder="" hidden> -->
+            <span id="offer-animation">अपना ईमेल एड्रेस भरे |</span>
+          </div>
+          <button type="button" id="submit" onclick="notifyMsg()">NOTIFY&nbsp;ME</button>
+        </form>
+      </div>
+      <div id="toastmsg-cont" class="provide-email"></div>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://images.news18.com/static_news18/pix/ibnhome/news18/dmpofferadd/images/offer-script.js?v=.8"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function() {
   $(".ts_nw_list:first-of-type").slick({
     dots: true,
@@ -17,6 +18,35 @@ $(document).ready(function() {
     nextArrow:
       '<button type="button" class="snp cust-next"><span></span></button>'
   });
+=======
+$(document).ready(function(){
+    $(document).on('click', '#nav-hm-btn', function(){
+      if( $(this).hasClass('cross-btn') ){
+        $(this).removeClass('cross-btn')
+        .attr('title', 'Menu button');
+      }else{
+        $(this).addClass('cross-btn')
+        .attr('title', 'Close menu');
+      }
+    });
+
+    $('.ts_nw_list:first-of-type').slick({
+        dots: true,
+        infinite: false,
+        speed: 500,
+        arrows:false
+    });
+
+    $('.carousel_list').slick({
+        autoplay:false,
+        autoPlaySpeed: 5000,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        prevArrow: '<button type="button" class="snp cust-prev"><span></span></button>',
+        nextArrow: '<button type="button" class="snp cust-next"><span></span></button>'
+    });
+>>>>>>> 8a4bbd7901f2832dbc8af23718d5b7891659e08a
 
   $(".carousel_list_new").slick({
     autoplay: false,

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Sheets API Quickstart</title>
+    <meta charset="utf-8" />
+    <style>
+      .offer-cont{position: relative;width: 320px;}
+      .offer-cont>img{width: 100%;border: none;}
+      .offer-timer{position: absolute;left: 103px;top:136px;font-size: 22px;transform: rotate(-12deg);background: #ffce07;}
+      .form-cont{height: 30px;position: absolute;width: calc(100% - 105px);right: 10px;bottom: 10px;display: flex;}
+      .form-input-cont{position: relative;background: #830e14;border: 1px solid #d3878b; color: #eee8e8;width: calc(100% - 86px);padding: 5px;margin-right:10px;font-size: 12px;height: 100%;box-sizing: border-box;}
+      .form-input-cont span{position: absolute;width:calc(100% - 20px);height: calc(100% - 10px);left: 0;top:0;margin: 5px;color: #eee8e8;box-sizing: border-box;overflow: hidden;
+        border-right:.50px solid #eee8e8;white-space: nowrap;letter-spacing: .30px;
+        animation:typing 3.5s steps(20, end) infinite, blink-caret .5s step-end infinite;}
+      .form-cont input[type='text']{height: 100%;background: transparent;border: none;width:100%;color:#eee8e8; }
+      .form-cont button{border: none;background: #ff9900;color: #fff;height: 100%;padding: 0 5px;font-weight: bold;font-size:12px;}
+      .form-cont button:focus,
+      .form-cont input:focus{outline: none; }
+      @keyframes typing {from { width: 0 }to { width: calc(100% - 20px) }}
+      @keyframes blink-caret {from, to { border-color: transparent }50% { border-color: orange }}
+    </style>
+  </head>
+  <body>
+    <div class="offer-cont" id="oc">
+      <img src="add-bg.jpg" alt="">
+      <strong id="offer-timer" class="offer-timer"></strong>
+      <div class="form-cont">
+        <div class="form-input-cont" id="form-input-cont">
+          <input type="text" placeholder="" id="offer-email">
+          <span id="offer-animation">अपना ईमेल एड्रेस भरे</span>
+        </div>
+        <button id="email-save">NOTIFY&nbsp;ME</button>
+      </div>
+    </div>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("April 23, 2019 22:40:00").getTime();
+      // Update the count down every 1 second
+      var x = setInterval(function() {
+      // Get todays date and time
+      var now = new Date().getTime();
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+      // Display the result in the element with id="demo"
+      document.getElementById("offer-timer").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s " ;
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("offer-timer").innerHTML = "";
+      }
+      }, 1000);
+      var spanfocus = document.getElementById('form-input-cont');
+      var focus = document.getElementById('offer-email');
+      var oc = document.getElementById('oc');
+      var emailsave = document.getElementById('email-save');
+
+      spanfocus.addEventListener("click", function(event){
+        event.stopPropagation();
+        document.getElementById('offer-animation').style.display = 'none';
+        focus.focus();
+      });
+
+      oc.addEventListener('click', function(){
+        document.getElementById('offer-animation').style.display = 'block';
+        focus.value = '';
+      });
+      emailsave.addEventListener('click', function(){
+        event.stopPropagation();
+      });
+
+    </script>
+  </body>
+</html>

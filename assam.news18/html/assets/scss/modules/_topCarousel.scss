@@ -1,6 +1,7 @@
 .carousel_cont {
   overflow: hidden;
   position: relative;
+<<<<<<< HEAD
   // width: 924px;
 
   .slick-slide {
@@ -19,12 +20,35 @@
   .js-error {
     a {
       &:nth-of-type(n + 4) {
+=======
+  .slick-track{
+    @extend .clearfix;
+  }
+  width: 924px;
+  .slick-slide {
+      margin: 0 10px;
+      float: left;
+  }
+  .slick-list {
+      margin: 0 -10px;
+  }
+  .js-error{
+    >a{
+      &:first-child{
+        padding-right: 15px;
+        + a {
+          padding-right: 15px;
+        }
+      }
+      &:nth-of-type(n+4){
+>>>>>>> 8a4bbd7901f2832dbc8af23718d5b7891659e08a
         display: none;
       }
     }
   }
 }
 
+<<<<<<< HEAD
 .carousel_list {
   // display: flex;
   // flex-wrap: wrap;
@@ -45,6 +69,12 @@
   // display: inline-block;
   // width: 33%;
   &:focus {
+=======
+.carousl_data{
+  display: inline-block;
+  width: 33%;
+  &:focus{
+>>>>>>> 8a4bbd7901f2832dbc8af23718d5b7891659e08a
     outline: none;
   }
   figure {
