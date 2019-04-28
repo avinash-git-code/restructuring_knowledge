@@ -1,0 +1,34 @@
+{
+  "sponosrWidget": {
+    "logoUrl": "lok-sabha-election-2019",
+    "logoImage": "images.hindi.news18.com/ibnkhabar/uploads/2019/04/lse-hslogo.png",
+    "logoTitle": "Title"
+  },
+  "sponsorList":[
+    {
+    "sponserImage": "static.lokmat.news18.com/ibnlokmat/uploads/2019/04/ultratech-logo.jpg",
+    "sponsorTitle": "ultra tech",
+    "sponsorLandingUrl": "pubads.g.doubleclick.net/gampad/clk?id=5046552945&iu=/1039154/Hindi_News18/Hindi_News18_Clicktracker/Hindi_News18_Clicktracker_UltraTech"
+    },
+    {
+      "sponserImage": "static.lokmat.news18.com/ibnlokmat/uploads/2019/04/whirl-pool-logo.jpg",
+      "sponsorTitle": "",
+      "sponsorLandingUrl": "pubads.g.doubleclick.net/gampad/clk?id=5030890783&iu=/1039154/Hindi_News18/Hindi_News18_Clicktracker/Hindi_News18_Clicktracker_Whirlpool"
+    },
+    {
+      "sponserImage": "images.hindi.news18.com/ibnkhabar/uploads/2019/04/ultima-logo.jpg",
+      "sponsorTitle": "",
+      "sponsorLandingUrl": "pubads.g.doubleclick.net/gampad/clk?id=5030311121&iu=/1039154/Hindi_News18/Hindi_News18_Clicktracker/Hindi_News18_Clicktracker_AsianPaints"
+    },
+    {
+      "sponserImage": "images.hindi.news18.com/ibnkhabar/uploads/2019/04/hdfe-life-logo.jpg",
+      "sponsorTitle": "",
+      "sponsorLandingUrl": "pubads.g.doubleclick.net/gampad/clk?id=5029881507&iu=/1039154/Hindi_News18/Hindi_News18_Clicktracker/Hindi_News18_Clicktracker_HDFC"
+    },
+    {
+      "sponserImage": "images.hindi.news18.com/ibnkhabar/uploads/2019/04/hdfc-hloan-logo.jpg",
+      "sponsorTitle": "",
+      "sponsorLandingUrl": "pubads.g.doubleclick.net/gampad/clk?id=5031170551&iu=/1039154/Hindi_News18/Hindi_News18_Clicktracker/Hindi_News18_Clicktracker_HDFCLoan"
+    }
+  ]
+}

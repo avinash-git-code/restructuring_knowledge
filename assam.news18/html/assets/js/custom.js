@@ -1,24 +1,3 @@
-<<<<<<< HEAD
-$(document).ready(function() {
-  $(".ts_nw_list:first-of-type").slick({
-    dots: true,
-    infinite: false,
-    speed: 500,
-    arrows: false
-  });
-
-  $(".carousel_list").slick({
-    autoplay: false,
-    autoPlaySpeed: 5000,
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    prevArrow:
-      '<button type="button" class="snp cust-prev"><span></span></button>',
-    nextArrow:
-      '<button type="button" class="snp cust-next"><span></span></button>'
-  });
-=======
 $(document).ready(function(){
     $(document).on('click', '#nav-hm-btn', function(){
       if( $(this).hasClass('cross-btn') ){
@@ -46,7 +25,6 @@ $(document).ready(function(){
         prevArrow: '<button type="button" class="snp cust-prev"><span></span></button>',
         nextArrow: '<button type="button" class="snp cust-next"><span></span></button>'
     });
->>>>>>> 8a4bbd7901f2832dbc8af23718d5b7891659e08a
 
   $(".carousel_list_new").slick({
     autoplay: false,
@@ -60,7 +38,7 @@ $(document).ready(function(){
       '<button type="button" class="snp cust-next"><span></span></button>'
   });
 
-  
+
 
   $(function() {
     $(".slider_stories_cont ul")
@@ -99,5 +77,36 @@ $(document).ready(function(){
       '<button type="button" class="footer-tv-slides cust-prev" title="Pervious"></button>',
     nextArrow:
       '<button type="button" class="footer-tv-slides cust-next" title="Next"></button>'
+  });
+
+var widgetLogo = '', sponserList =  '', data = '';
+  $.ajax({
+    dataType: 'json',
+    url: 'widgetdata.json',
+    data: data,
+    success: function(data) {
+      var sponsorLogo = data.sponosrWidget;
+      var sponsorList = data.sponsorList;
+      var widgetLogo = '<a class="top-widget-landing" href="/'+sponsorLogo.logoUrl+'">';
+          widgetLogo +='<img src="//'+sponsorLogo.logoImage+'" alt=""></a>';
+          $('#widget-logo').removeClass('animated-background').html(widgetLogo);
+          for (key in sponsorList ){
+            sponserList += '<li><a href="//'+ sponsorList[key].sponsorLandingUrl +'" title="'+ sponsorList[key].sponsorTitle +'" target="_blank">';
+            sponserList += '<img src="//'+ sponsorList[key].sponserImage +'" alt=""></a></li>';
+          }
+          sponserList += sponserList;
+          $('#sponser-list').html(sponserList).slick({
+              dots: false,
+              infinite: true,
+              speed: 500,
+              arrows:false,
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoPlaySpeed: 4000,
+              edgeFriction: .50,
+              speed: 1500
+          });
+    },
   });
 });
