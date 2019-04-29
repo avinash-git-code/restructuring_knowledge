@@ -8,8 +8,8 @@
   }
 }
 #sponser-list-cont{
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
   strong{
     color: #d4d4d4;
     font-size: 15px;
@@ -22,17 +22,9 @@
 }
 #sponser-list{
   display: flex;
-  width: 570px;
   justify-content: flex-end;
-  margin-right: -20px;
-  &.slick-slider{
-    // margin-right: -20px;
-  }
   li{
-    // width: 98px;
-    // height: 48px;
     &:not(:last-of-type){
-      // margin-right: 20px;
     }
   }
   a{
@@ -40,7 +32,6 @@
       outline: none;
     }
     display: block;
-    // padding: 5px 10px;
     margin-right: 20px;
   }
   .opac-zero{
@@ -58,16 +49,17 @@
 }
 
 .widget-landing-placeholder{
-  width: 180px;
-  height: 64px;
   display: flex;
-  // @extend .animated-background;
+  img,a{
+    display: block;
+  }
+  a{
+    &:focus{
+      outline: none;
+    }
+  }
 }
-
-
-
-
-.animated-background {
+.loading-image {
     animation-duration: 1.6s;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
@@ -75,8 +67,6 @@
     animation-timing-function: linear;
     background: #f6f7f8;
     background: linear-gradient(to right, #e5e5e5 8%, #f5f5f5 18%, #e5e5e5 33%);
-    // background-size: 800px 104px;
-    // height: 140px;
     position: relative
 }
 .background-masker {
@@ -108,4 +98,46 @@
     100% {
         background-position: 468px 0
     }
+}
+
+@media(min-width:768px){
+  #sponser-list-cont{
+    display: flex;
+    justify-content: space-between;
+    margin-right: -20px;
+  }
+  #sponser-list{
+    width: 570px;
+  }
+}
+
+@media(max-width:767px){
+  #sponser-list.js-error{
+    li{
+      &:nth-of-type(n+2){
+        a{
+          margin-right: 0px;
+        }
+      }
+      &:nth-of-type(n+3){
+        display:none;
+      }
+    }
+  }
+  .sponser-cont > .layout{
+    padding:10px;
+  }
+  .widget-landing-placeholder{
+    width: 116px;
+    padding-top: 20px;
+  }
+  #sponser-list-cont{
+    width: calc(100% - 160px);
+  }
+  #sponser-list-cont strong{
+    font-size: 11px;
+    padding-bottom: 5px;
+    display: block;
+    padding-top:0;
+  }
 }

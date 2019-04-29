@@ -89,24 +89,34 @@ var widgetLogo = '', sponserList =  '', data = '';
       var sponsorList = data.sponsorList;
       var widgetLogo = '<a class="top-widget-landing" href="/'+sponsorLogo.logoUrl+'">';
           widgetLogo +='<img src="//'+sponsorLogo.logoImage+'" alt=""></a>';
-          $('#widget-logo').removeClass('animated-background').html(widgetLogo);
+          $('#widget-logo').removeClass('loading-image').html(widgetLogo);
           for (key in sponsorList ){
-            sponserList += '<li><a href="//'+ sponsorList[key].sponsorLandingUrl +'" title="'+ sponsorList[key].sponsorTitle +'" target="_blank">';
-            sponserList += '<img src="//'+ sponsorList[key].sponserImage +'" alt=""></a></li>';
+              sponserList += '<li><a href="//'+ sponsorList[key].sponsorLandingUrl +'" title="'+ sponsorList[key].sponsorTitle +'" target="_blank">';
+              sponserList += '<img src="//'+ sponsorList[key].sponserImage +'" alt=""></a></li>';
+              // if(key == 1){
+              //   break;
+              // }
           }
-          sponserList += sponserList;
-          $('#sponser-list').html(sponserList).slick({
-              dots: false,
-              infinite: true,
-              speed: 500,
-              arrows:false,
-              slidesToShow: 5,
-              slidesToScroll: 1,
-              autoplay: true,
-              autoPlaySpeed: 4000,
-              edgeFriction: .50,
-              speed: 1500
-          });
+          $('#sponser-list').html(sponserList);
+          // sponserList += sponserList;
+          // $('#sponser-list').html(sponserList).slick({
+          //     dots: false,
+          //     infinite: true,
+          //     speed: 500,
+          //     arrows:false,
+          //     slidesToShow: 5,
+          //     slidesToScroll: 1,
+          //     autoplay: true,
+          //     autoPlaySpeed: 4000,
+          //     edgeFriction: .50,
+          //     speed: 1500,
+          //      responsive: [{
+          //           breakpoint: 767,
+          //           settings: {
+          //             slidesToShow: 2
+          //           }
+          //         }]
+          // });
     },
   });
 });
