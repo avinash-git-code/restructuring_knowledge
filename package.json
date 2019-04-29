@@ -27,8 +27,11 @@
   },
   "homepage": "https://github.com/avinash-git-code/restructuring_knowledge#readme",
   "devDependencies": {
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.1",
     "live-server": "^1.2.1",
     "node-sass": "^4.11.0"
+  },
+  "dependencies": {
+    "jpeg-js": "^0.3.4"
   }
 }
