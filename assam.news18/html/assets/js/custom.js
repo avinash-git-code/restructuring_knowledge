@@ -79,7 +79,9 @@ $(document).ready(function(){
       '<button type="button" class="footer-tv-slides cust-next" title="Next"></button>'
   });
 
-var widgetLogo = '', sponserList =  '', data = '';
+ var widgetLogo = '', sponserList =  '', data = '', impTrackerHtml = '', impTrackerUrl = [], impTrackerId = [];
+// var googletag = googletag || {};
+// googletag.cmd = googletag.cmd || [];
   $.ajax({
     dataType: 'json',
     url: 'widgetdata.json',
@@ -93,30 +95,42 @@ var widgetLogo = '', sponserList =  '', data = '';
           for (key in sponsorList ){
               sponserList += '<li><a href="//'+ sponsorList[key].sponsorLandingUrl +'" title="'+ sponsorList[key].sponsorTitle +'" target="_blank">';
               sponserList += '<img src="//'+ sponsorList[key].sponserImage +'" alt=""></a></li>';
-              // if(key == 1){
-              //   break;
-              // }
+              impTrackerUrl.push(sponsorList[key].defineSlot);
+              impTrackerId.push(sponsorList[key].defineSlotId);
           }
           $('#sponser-list').html(sponserList);
-          // sponserList += sponserList;
-          // $('#sponser-list').html(sponserList).slick({
-          //     dots: false,
-          //     infinite: true,
-          //     speed: 500,
-          //     arrows:false,
-          //     slidesToShow: 5,
-          //     slidesToScroll: 1,
-          //     autoplay: true,
-          //     autoPlaySpeed: 4000,
-          //     edgeFriction: .50,
-          //     speed: 1500,
-          //      responsive: [{
-          //           breakpoint: 767,
-          //           settings: {
-          //             slidesToShow: 2
-          //           }
-          //         }]
-          // });
+          $('#sponser-list').html(sponserList).slick({
+              dots: false,
+              infinite: true,
+              speed: 500,
+              arrows:false,
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoPlaySpeed: 4000,
+              edgeFriction: .50,
+              speed: 1500,
+               responsive: [{
+                    breakpoint: 767,
+                    settings: {
+                      slidesToShow: 2
+                    }
+                  }]
+          });
+          console.log('impTrackerUrl  ',impTrackerUrl[0]);
+          console.log('impTrackerId  ',impTrackerId[0]);
+          var x=impTrackerUrl[0];
+          console.log('impTrackerId  ',x);
+
+          googletag.cmd.push(function() {
+          googletag.defineSlot('/1039154/Hindi_News18/Hindi_News18_ImpressionTracker/Hindi_News18_ImpressionTracker_UltraTech', [1, 1], 'div-gpt-ad-1555662930372-0').addService(googletag.pubads());
+          googletag.pubads().enableSingleRequest();
+          googletag.enableServices();
+          });
+            googletag.cmd.push(function() { googletag.display('+X+'); });
     },
   });
+
+
+
 });
