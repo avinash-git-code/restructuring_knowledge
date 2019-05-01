@@ -1,4 +1,6 @@
+
 $(document).ready(function(){
+
     $(document).on('click', '#nav-hm-btn', function(){
       if( $(this).hasClass('cross-btn') ){
         $(this).removeClass('cross-btn')
@@ -79,7 +81,7 @@ $(document).ready(function(){
       '<button type="button" class="footer-tv-slides cust-next" title="Next"></button>'
   });
 
-var widgetLogo = '', sponserList =  '', data = '';
+var widgetLogo = '', sponserList =  '', data = '', impTrackerId = [], impTrackerLink = [], impTrackerHTML = '';
   $.ajax({
     dataType: 'json',
     url: 'widgetdata.json',
@@ -93,30 +95,46 @@ var widgetLogo = '', sponserList =  '', data = '';
           for (key in sponsorList ){
               sponserList += '<li><a href="//'+ sponsorList[key].sponsorLandingUrl +'" title="'+ sponsorList[key].sponsorTitle +'" target="_blank">';
               sponserList += '<img src="//'+ sponsorList[key].sponserImage +'" alt=""></a></li>';
-              // if(key == 1){
-              //   break;
-              // }
+              impTrackerHTML += '<div id="'+ sponsorList[key].defineSlotId +'" style="height:1px;width:1px;"></div>'
+              impTrackerId.push(sponsorList[key].defineSlotId);
+              impTrackerLink.push(sponsorList[key].defineSlot);
+
           }
-          $('#sponser-list').html(sponserList);
+          // $('#sponser-list').html(sponserList); 
           // sponserList += sponserList;
-          // $('#sponser-list').html(sponserList).slick({
-          //     dots: false,
-          //     infinite: true,
-          //     speed: 500,
-          //     arrows:false,
-          //     slidesToShow: 5,
-          //     slidesToScroll: 1,
-          //     autoplay: true,
-          //     autoPlaySpeed: 4000,
-          //     edgeFriction: .50,
-          //     speed: 1500,
-          //      responsive: [{
-          //           breakpoint: 767,
-          //           settings: {
-          //             slidesToShow: 2
-          //           }
-          //         }]
-          // });
+          $('#sponsor-top-widget').append(impTrackerHTML);
+          $('#sponser-list').removeClass('js-error ').html(sponserList).slick({
+              dots: false,
+              infinite: true,
+              speed: 500,
+              arrows:false,
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoPlaySpeed: 4000,
+              edgeFriction: .50,
+              speed: 1500,
+               responsive: [{
+                    breakpoint: 767,
+                    settings: {
+                      slidesToShow: 2
+                    }
+                  }]
+          });
+          console.log(impTrackerId);
+          console.log(impTrackerLink.length);
+          setTimeout(function(){
+            for(var i=0; i<impTrackerLink.length; i++){
+              console.log(impTrackerId[i]);
+              console.log(impTrackerLink[i]);
+              googletag.cmd.push(function() {
+                googletag.defineSlot(impTrackerLink[i], [1, 1], impTrackerId[i]).addService(googletag.pubads());
+                googletag.pubads().enableSingleRequest();
+                googletag.enableServices();
+              });
+              googletag.cmd.push(function() { googletag.display(impTrackerId[i]); });
+            }
+          },500)
     },
   });
 });

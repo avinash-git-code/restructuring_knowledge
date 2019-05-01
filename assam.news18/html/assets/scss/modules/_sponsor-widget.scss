@@ -1,3 +1,4 @@
+/*!sopnsor widget css*/
 .sponser-cont{
   background: url(http://images.hindi.news18.com/ibnkhabar/uploads/2019/04/slogo-bg.jpg) left top repeat;
   > .layout{
@@ -8,8 +9,6 @@
   }
 }
 #sponser-list-cont{
-  // display: flex;
-  // justify-content: space-between;
   strong{
     color: #d4d4d4;
     font-size: 15px;
@@ -98,7 +97,7 @@
     100% {
         background-position: 468px 0
     }
-}
+}  
 
 @media(min-width:768px){
   #sponser-list-cont{
@@ -141,3 +140,4 @@
     padding-top:0;
   }
 }
+/*!sopnsor widget css*/
