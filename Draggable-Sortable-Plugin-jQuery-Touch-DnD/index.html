@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery Touch-dnd Plugin Demos</title>
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4">
+        <ul class="list" id="lhs">
+          <li>A 1</li>
+          <li>A 2</li>
+          <li>A 3</li>
+          <li>A 4</li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <ul class="list" id="mid">
+          <li>B 1</li>
+          <li>B 2</li>
+          <li>B 3</li>
+          <li>B 4</li>
+        </ul>
+      </div>
+      <div class="col-lg-4">
+        <ul class="list" id="rhs">
+          <li>B 1</li>
+          <li>B 2</li>
+          <li>B 3</li>
+          <li>B 4</li>
+        </ul>
+      </div>
+    </div>
+    <!-- <h2>Draggable</h2>
+    <ul class="grid wide">
+      <li class="draggable"></li>
+      <li class="draggable"></li>
+      <li class="draggable"></li>
+      <li class="draggable"></li>
+      <li class="draggable"></li>
+      <li class="draggable"></li>
+      <li class="draggable"></li>
+    </ul>
+    <h2>Droppable</h2>
+    <div class="droppable"></div>
+    <div class="droppable"></div> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="touch-dnd.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      $('#lhs').sortable({ connectWith: '.droppable' })
+      $('#rhs').sortable({ connectWith: '#lhs' })
+      .on('sortable:receive', function(e, ui) {
+        ui.item.removeClass('draggable')
+      })
+
+      // $('.draggable').draggable({ connectWith: '#rhs' })
+      // $('.droppable').droppable({ activeClass: 'active', hoverClass: 'drop-here' })
+    })
+  </script>
+</body>
+</html>

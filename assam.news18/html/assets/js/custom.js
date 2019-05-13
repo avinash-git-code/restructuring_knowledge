@@ -82,55 +82,80 @@ $(document).ready(function(){
  var widgetLogo = '', sponserList =  '', data = '', impTrackerHtml = '', impTrackerUrl = [], impTrackerId = [];
 // var googletag = googletag || {};
 // googletag.cmd = googletag.cmd || [];
+  // $.ajax({
+  //   dataType: 'json',
+  //   url: 'widgetdata.json',
+  //   data: data,
+  //   success: function(data) {
+  //     var sponsorLogo = data.sponosrWidget;
+  //     var sponsorList = data.sponsorList;
+  //     var widgetLogo = '<a class="top-widget-landing" href="/'+sponsorLogo.logoUrl+'">';
+  //         widgetLogo +='<img src="//'+sponsorLogo.logoImage+'" alt=""></a>';
+  //         $('#widget-logo').removeClass('loading-image').html(widgetLogo);
+  //         for (key in sponsorList ){
+  //             sponserList += '<li><a href="//'+ sponsorList[key].sponsorLandingUrl +'" title="'+ sponsorList[key].sponsorTitle +'" target="_blank">';
+  //             sponserList += '<img src="//'+ sponsorList[key].sponserImage +'" alt=""></a></li>';
+  //             impTrackerUrl.push(sponsorList[key].defineSlot);
+  //             impTrackerId.push(sponsorList[key].defineSlotId);
+  //         }
+  //         $('#sponser-list').html(sponserList);
+  //         $('#sponser-list').html(sponserList).slick({
+  //             dots: false,
+  //             infinite: true,
+  //             speed: 500,
+  //             arrows:false,
+  //             slidesToShow: 5,
+  //             slidesToScroll: 1,
+  //             autoplay: true,
+  //             autoPlaySpeed: 4000,
+  //             edgeFriction: .50,
+  //             speed: 1500,
+  //              responsive: [{
+  //                   breakpoint: 767,
+  //                   settings: {
+  //                     slidesToShow: 2
+  //                   }
+  //                 }]
+  //         });
+  //         console.log('impTrackerUrl  ',impTrackerUrl[0]);
+  //         console.log('impTrackerId  ',impTrackerId[0]);
+  //         var x=impTrackerUrl[0];
+  //         console.log('impTrackerId  ',x);
+  //
+  //         googletag.cmd.push(function() {
+  //         googletag.defineSlot('/1039154/Hindi_News18/Hindi_News18_ImpressionTracker/Hindi_News18_ImpressionTracker_UltraTech', [1, 1], 'div-gpt-ad-1555662930372-0').addService(googletag.pubads());
+  //         googletag.pubads().enableSingleRequest();
+  //         googletag.enableServices();
+  //         });
+  //           googletag.cmd.push(function() { googletag.display('+X+'); });
+  //   },
+  // });
+  var dataConst = 'election.nw18.com/electiondata/electionjson/general_election_2019/live/lok_sabha/constituency/';
+  var constList = [];
   $.ajax({
     dataType: 'json',
-    url: 'widgetdata.json',
+    url: 'all_cons_list.json',
     data: data,
     success: function(data) {
-      var sponsorLogo = data.sponosrWidget;
-      var sponsorList = data.sponsorList;
-      var widgetLogo = '<a class="top-widget-landing" href="/'+sponsorLogo.logoUrl+'">';
-          widgetLogo +='<img src="//'+sponsorLogo.logoImage+'" alt=""></a>';
-          $('#widget-logo').removeClass('loading-image').html(widgetLogo);
-          for (key in sponsorList ){
-              sponserList += '<li><a href="//'+ sponsorList[key].sponsorLandingUrl +'" title="'+ sponsorList[key].sponsorTitle +'" target="_blank">';
-              sponserList += '<img src="//'+ sponsorList[key].sponserImage +'" alt=""></a></li>';
-              impTrackerUrl.push(sponsorList[key].defineSlot);
-              impTrackerId.push(sponsorList[key].defineSlotId);
+          for (key in data ){
+              constList.push(key.toLowerCase());
           }
-          $('#sponser-list').html(sponserList);
-          $('#sponser-list').html(sponserList).slick({
-              dots: false,
-              infinite: true,
-              speed: 500,
-              arrows:false,
-              slidesToShow: 5,
-              slidesToScroll: 1,
-              autoplay: true,
-              autoPlaySpeed: 4000,
-              edgeFriction: .50,
-              speed: 1500,
-               responsive: [{
-                    breakpoint: 767,
-                    settings: {
-                      slidesToShow: 2
-                    }
-                  }]
-          });
-          console.log('impTrackerUrl  ',impTrackerUrl[0]);
-          console.log('impTrackerId  ',impTrackerId[0]);
-          var x=impTrackerUrl[0];
-          console.log('impTrackerId  ',x);
-
-          googletag.cmd.push(function() {
-          googletag.defineSlot('/1039154/Hindi_News18/Hindi_News18_ImpressionTracker/Hindi_News18_ImpressionTracker_UltraTech', [1, 1], 'div-gpt-ad-1555662930372-0').addService(googletag.pubads());
-          googletag.pubads().enableSingleRequest();
-          googletag.enableServices();
-          });
-            googletag.cmd.push(function() { googletag.display('+X+'); });
+          constituencyData();
     },
   });
 
+  function constituencyData(){
+    $.ajax({
+      dataType: 'json',
+      url: '+ dataConst + constList[0]+ '+'.json+',
+      data: data,
+      success: function(data){
+        for(key in data){
+          console.log('test', key);
+        }
+      }
+    });
+  }
 
 
 });
