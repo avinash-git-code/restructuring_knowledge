@@ -1,0 +1,44 @@
+{
+  "sponosrWidget": {
+    "logoUrl": "lok-sabha-election-2019",
+    "logoImage": "images.hindi.news18.com/ibnkhabar/uploads/2019/04/lse-hslogo.png",
+    "logoTitle": "Title"
+  },
+  "sponsorList":[
+    {
+    "sponserImage": "static.lokmat.news18.com/ibnlokmat/uploads/2019/04/ultratech-logo.jpg",
+    "sponsorTitle": "ultra tech",
+    "sponsorLandingUrl": "pubads.g.doubleclick.net/gampad/clk?id=5046552945&iu=/1039154/Hindi_News18/Hindi_News18_Clicktracker/Hindi_News18_Clicktracker_UltraTech",
+    "defineSlot": "/1039154/Hindi_News18/Hindi_News18_ImpressionTracker/Hindi_News18_ImpressionTracker_UltraTech",
+    "defineSlotId": "div-gpt-ad-1555662930372-0"
+    },
+    {
+      "sponserImage": "static.lokmat.news18.com/ibnlokmat/uploads/2019/04/whirl-pool-logo.jpg",
+      "sponsorTitle": "",
+      "sponsorLandingUrl": "pubads.g.doubleclick.net/gampad/clk?id=5030890783&iu=/1039154/Hindi_News18/Hindi_News18_Clicktracker/Hindi_News18_Clicktracker_Whirlpool",
+      "defineSlot": "/1039154/Hindi_News18/Hindi_News18_ImpressionTracker/Hindi_News18_ImpressionTracker_Whirpool",
+      "defineSlotId": "div-gpt-ad-1554881101897-0"
+    },
+    {
+      "sponserImage": "images.hindi.news18.com/ibnkhabar/uploads/2019/04/ultima-logo.jpg",
+      "sponsorTitle": "",
+      "sponsorLandingUrl": "pubads.g.doubleclick.net/gampad/clk?id=5030311121&iu=/1039154/Hindi_News18/Hindi_News18_Clicktracker/Hindi_News18_Clicktracker_AsianPaints",
+      "defineSlot": "/1039154/Hindi_News18/Hindi_News18_ImpressionTracker/Hindi_News18_ImpressionTracker_AsianPaints",
+      "defineSlotId": "div-gpt-ad-1554806561120-0"
+    },
+    {
+      "sponserImage": "images.hindi.news18.com/ibnkhabar/uploads/2019/04/hdfe-life-logo.jpg",
+      "sponsorTitle": "",
+      "sponsorLandingUrl": "pubads.g.doubleclick.net/gampad/clk?id=5029881507&iu=/1039154/Hindi_News18/Hindi_News18_Clicktracker/Hindi_News18_Clicktracker_HDFC",
+      "defineSlot": "/1039154/Hindi_News18/Hindi_News18_ImpressionTracker/Hindi_News18_ImpressionTracker_HDFC",
+      "defineSlotId": "div-gpt-ad-1554807908102-0"
+    },
+    {
+      "sponserImage": "images.hindi.news18.com/ibnkhabar/uploads/2019/04/hdfc-hloan-logo.jpg",
+      "sponsorTitle": "",
+      "sponsorLandingUrl": "pubads.g.doubleclick.net/gampad/clk?id=5031170551&iu=/1039154/Hindi_News18/Hindi_News18_Clicktracker/Hindi_News18_Clicktracker_HDFCLoan",
+      "defineSlot": "/1039154/Hindi_News18/Hindi_News18_ImpressionTracker/Hindi_News18_ImpressionTracker_HDFCLoan",
+      "defineSlotId": "div-gpt-ad-1554890564052-0"
+    }
+  ]
+}

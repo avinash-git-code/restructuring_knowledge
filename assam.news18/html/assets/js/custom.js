@@ -157,5 +157,30 @@ $(document).ready(function(){
     });
   }
 
+  $.ajax({
+    dataType: 'json',
+    url: 'all_cons_list.json',
+    data: data,
+    success: function(data) {
+      for(key in data ){
+        allConstituency.push(key.toLowerCase());
+        }
+        getConstituency();
+      }
+  });
+
+  function getConstituency(){
+    $.ajax({
+      dataType: 'json',
+      url: 'https://election.nw18.com/electiondata/electionjson/general_election_2019/live/lok_sabha/switchdata.json',
+      // url: constUrl+allConstituency[0]+'.json',
+      data: data,
+      success: function(data) {
+        for(key in data ){
+          console.log('new key', data);
+          }
+        }
+    });
+  }
 
 });
