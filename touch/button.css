@@ -1,0 +1,420 @@
+ .hbgColor {
+   background: #056130 !important;
+ }
+
+ .amplifyChat .quickTextButtonBasic .quickTextButtonText, .amplifyChat .textInput, .textInput, p.amplifyChat, .quickTextButtonText, p.amplifyChat.galleryItemTitle, p.amplifyChat.galleryItemSubTitle, .quickTextButtonBasic.quickTextButtonText {
+   font-size: 12px;
+ }
+
+ .hcloseIcon {
+   position: absolute;
+   right: 0;
+   margin-top: -40px;
+   width: 33px;
+   height: 33px !important;
+ }
+
+ .socialLinks2 {
+   position: absolute;
+   margin-left: 10px;
+   bottom: unset;
+ }
+
+ #amplifyChatHeaderMinimize img {
+   width: 16px;
+   height: 16px;
+ }
+
+ .amplifyChat p {
+   background: #fff;
+   position: relative;
+   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+   -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), 0 0 10px rgba(0, 0, 0, 0.1) inset;
+ }
+
+ .amplifyChat p:before, .amplifyChat p:after {
+   content: '';
+   position: absolute;
+   z-index: -1;
+   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+   -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+   top: 10px;
+   bottom: 10px;
+   left: 0;
+   right: 0;
+   -moz-border-radius: 100px / 10px;
+   border-radius: 100px / 10px;
+ }
+
+ .amplifyChat p:after {
+   right: 10px;
+   left: auto;
+   -webkit-transform: skew(8deg) rotate(3deg);
+   -moz-transform: skew(8deg) rotate(3deg);
+   -ms-transform: skew(8deg) rotate(3deg);
+   -o-transform: skew(8deg) rotate(3deg);
+   transform: skew(8deg) rotate(3deg);
+ }
+
+ .amplifyChat.ChatLog__entry.ChatLog__entry_mine p.amplifyChat {
+   border-radius: 6px;
+   padding: 12px;
+ }
+
+ .amplifyChat p.amplifyChat {
+   padding: 16px;
+   max-width: 86%;
+   color: #333;
+   min-width: 177px;
+ }
+
+ .amplifyChat .galleryItemTitle, .amplifyChat .galleryItemSubTitle, .amplifyChat p.amplifyChat.galleryItemSubTitle, .amplifyChat p.amplifyChat.galleryItemTitle, .amplifyChat .galleryItemSubTitle {
+   max-width: 100%;
+   color: #333;
+   min-height: 80px;
+ }
+
+ #amplifyChatViewDiv {
+   background: transparent url('https://chat.amplify.ai/plugin/img/msgbg.png') repeat;
+   background-size: 60%;
+ }
+
+ #amplifyChatViewDiv:before {
+   background: rgba(0, 0, 0, .5);
+ }
+
+ .amplifyChat .textInput {
+   border-color: #c3c3c3;
+ }
+
+ .amplifyChat .textInput:focus {
+   outline: none
+ }
+
+ .amplifyChat, #mainDiv, #chatFrameWrapper, #chatList {
+   background: none;
+ }
+
+ #amplifyTriggerIcon, .amplifyTriggerIcon {
+   width: 80px;
+   height: 80px;
+   border-radius: 0px;
+   background-color: none !important;
+   background: none !important;
+ }
+
+ input:focus {
+   outline: none;
+ }
+
+ .amplifyChat .quickTextOptionWrapper .quickTextButtonBasic, .galleryItem .quickTextButtonBasic:hover {
+   background: #001d42;
+   justify-content: center;
+   height: 30px;
+   align-items: center;
+   border-radius: 6px;
+   color: #fff;
+ }
+
+ .amplifyChat .quickTextButtonRounded:hover, .quickTextButtonRounded:hover, .galleryItem .quickTextButtonBasic:hover {
+   background: #001d42 !important;
+   background-color: #001d42 !important;
+   border: 0px;
+ }
+
+ .amplifyChat .quickTextOptionWrapper .quickTextButtonRounded, .amplifyChat .quickTextButtonRounded {
+   border: 0px;
+ }
+
+ .galleryItem .quickTextButtonBasic:hover {
+   border-radius: 6px !important;
+ }
+
+ .amplifyChat .quickTextButtonBasic {
+   width: 120px;
+ }
+
+ .amplifyChat.galleryItem:nth-last-child(1), .amplifyChat.galleryItem {
+   border-radius: 6px !important;
+   min-width: 180px;
+ }
+
+ .saperator {
+   float: left;
+   width: 2px;
+   margin-top: 8px;
+ }
+
+ .saperator img {
+   height: 34px;
+   width: 1px;
+ }
+
+ @media(max-width: 765px) {
+   .saperator img {
+     height: 34px;
+     width: 2px;
+   }
+ }
+
+ .fbwaCustom {
+   display: none;
+ }
+
+ .gallery .amplifyChat .quickTextButtonBasic {
+   height: 40px;
+   width: 40px !important;
+   display: block;
+ }
+
+ .amplifyChat.galleryItem:nth-child(1) {
+   border-radius: 6px;
+ }
+
+ .gallery .amplifyChat .quickTextButtonBasic:nth-child(1) {
+   margin-top: 2px;
+ }
+
+ .galleryItem:nth-child(1) .quickTextButtonBasic:hover {
+   background-color: none !important;
+   background: none !important;
+   color: #E1261C !important;
+ }
+
+ .galleryItem:nth-child(2) .quickTextButtonBasic:hover {
+   background-color: none !important;
+   background: none !important;
+   color: #E1261C !important;
+ }
+
+ .galleryItem:nth-child(3) .quickTextButtonBasic:hover {
+   background-color: none !important;
+   background: none !important;
+   color: #E1261C !important;
+ }
+
+ .galleryItem:nth-child(4) .quickTextButtonBasic:hover {
+   background-color: none !important;
+   background: none !important;
+   color: #E1261C !important;
+ }
+
+ .galleryItem:nth-child(5) .quickTextButtonBasic:hover {
+   background-color: none !important;
+   background: none !important;
+   color: #E1261C !important;
+ }
+
+ .galleryItem:nth-child(6) .quickTextButtonBasic:hover {
+   background-color: none !important;
+   background: none !important;
+   color: #E1261C !important;
+ }
+
+ .galleryItem:nth-child(7) .quickTextButtonBasic:hover {
+   background-color: none !important;
+   background: none !important;
+   color: #E1261C !important;
+ }
+
+ .galleryItem:nth-child(8) .quickTextButtonBasic:hover {
+   background-color: none !important;
+   background: none !important;
+   color: #E1261C !important;
+ }
+
+ .galleryItem:nth-child(9) .quickTextButtonBasic:hover {
+   background-color: none !important;
+   background: none !important;
+   color: #E1261C !important;
+ }
+
+ .galleryItem:nth-child(10) .quickTextButtonBasic:hover {
+   background-color: none !important;
+   background: none !important;
+   color: #E1261C !important;
+ }
+
+ .galleryItem .quickTextButtonRounded:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(1) .quickTextButtonRounded:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(2) .quickTextButtonRounded:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(3) .quickTextButtonRounded:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(4) .quickTextButtonRounded:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(5) .quickTextButtonRounded:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(6) .quickTextButtonRounded:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(7) .quickTextButtonRounded:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(8) .quickTextButtonRounded:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(9) .quickTextButtonRounded:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(10) .quickTextButtonRounded:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem .quickTextButton:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(1) .quickTextButton:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(2) .quickTextButton:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(3) .quickTextButton:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(4) .quickTextButton:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(5) .quickTextButton:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(6) .quickTextButton:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(7) .quickTextButton:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(8) .quickTextButton:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(9) .quickTextButton:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .galleryItem:nth-child(10) .quickTextButton:hover {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .amplifyChat .amplifyChat .ChatLog .ChatLog__entry .quickTextButtonBasic .quickTextButton {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .amplifyChat .amplifyChat .ChatLog .ChatLog__entry .quickTextButtonRounded {
+   background-color: none !important;
+   background: none !important;
+ }
+
+ .amplifyChat .amplifyChat .ChatLog .ChatLog__entry .quickTextButtonBasic .quickTextButton:hover {
+   background-color: none !important;
+   background: none !important;
+   border-bottom-color: none;
+ }
+
+ .amplifyChat .amplifyChat .ChatLog .ChatLog__entry .quickTextButtonBasic .quickTextButton:hover .quickTextButtonRounded {
+   background-color: none !important;
+   background: none !important;
+   border-bottom-color: none;
+ }
+
+ @media(max-width: 765px) {
+   #amplifyWidget {
+     height: 420px;
+   }
+
+   #textInputSendButton, .textInput {
+     display: none;
+   }
+
+   span.brandingTxtBox {
+     margin-right: 12px;
+     margin-top: 9px;
+   }
+
+   #amplifyChatViewDiv {
+     height: calc(100% - 28px);
+   }
+
+   .highZindex {
+     height: 100px !important;
+     width: 100px !important;
+     left: 50% !important;
+     transform: translateX(-50%);
+     position: absolute;
+   }
+ }
+
+ @media(min-width: 766px) {
+   #amplifyWidget {
+     height: 420px;
+   }
+
+   #textInputSendButton, .textInput {
+     display: none;
+   }
+
+   span.brandingTxtBox {
+     margin-right: 12px;
+     margin-top: 9px;
+   }
+
+   #amplifyChatViewDiv {
+     height: calc(100% - 28px);
+   }
+ }
+
+ .amplifyChat .ChatLog .ChatLog__entry, .amplifyChat .ChatLog__entry.ChatLog__entry_mine:nth-child(1) {
+   margin-top: 5px !important;
+ }
