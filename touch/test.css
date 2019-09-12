@@ -1,0 +1,61 @@
+@media (max-width: 765px) {
+  .highZindex {
+    height: 100px !important;
+    width: 100px !important;
+    left: 38% !important;
+    position: absolute;
+  }
+
+  /* replace start */
+  .highZindex {
+    height: 80px !important;
+    width: 80px !important;
+    left: 50% !important;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+
+  /* replace close */
+
+
+  #amplifyDraggableDiv {
+    display: none;
+    /* add properties start */
+    width:80px;
+    height:80px;
+    right: initial;
+    /*  And remove left: 35% properties from js */
+    /* add properties close */
+  }
+
+  #amplifyTriggerDiv {
+    width: 95px;
+  }
+
+  /* replace start  */
+  #amplifyTriggerDiv {
+    width: 80px;
+    margin: 0px;
+  }
+  /* replace close  */
+
+/*  Add new class into this media start */
+.widgetIcon{
+  max-width:80px;
+  float: none;
+}
+/*  Add new class into this media close */
+
+#amplifyTriggerIcon, .amplifyTriggerIcon {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* replace properties start */
+#amplifyTriggerIcon, .amplifyTriggerIcon {
+    left: initial;
+    transform: translateX(0%);
+}
+/* replace properties close */
+
+}

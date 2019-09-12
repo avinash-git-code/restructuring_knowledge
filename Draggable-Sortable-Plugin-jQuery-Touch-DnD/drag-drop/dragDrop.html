@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Drag Drop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="drag-container">
+    <ul class="list" id="list-one">
+      <li>List One 1</li>
+      <li>List One 2</li>
+      <li>List One 3</li>
+      <li>List One 4</li>
+    </ul>
+    <ul class="list" id="list-two">
+      <li>List Two 1</li>
+      <li>List Two 2</li>
+      <li>List Two 3</li>
+      <li>List Two 4</li>
+    </ul>
+    <ul class="list" id="list-three">
+      <li>List Three 1</li>
+      <li>List Three 2</li>
+      <li>List Three 3</li>
+      <li>List Three 4</li>
+    </ul>
+  </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="touch-dnd.js"></script>
+<script type="text/javascript">
+$(function() {
+  $('#list-one, #list-two, #list-three').sortable({ connectWith: '.droppable' });
+
+  $('#list-two, #list-three, #list-one').sortable({ connectWith: '#list-one, #list-two, #list-three' })
+  .on('sortable:receive', function(e, ui) {
+    ui.item.removeClass('draggable')
+  });
+})
+</script>
+</body>
+</html>

@@ -11,13 +11,13 @@ function updatePartyValues(){
   setTimeout(function(){
     var listone=0, listtwo=0, listthree=0;
     $('#list-one li').each(function(){
-      listone += parseInt($(this).text());
+      listone += (parseInt($(this).text())) ? parseInt($(this).text()) : 0;
     });
     $('#list-two li').each(function(){
-      listtwo += parseInt($(this).text());
+      listtwo += (parseInt($(this).text())) ? parseInt($(this).text()) : 0;
     });
     $('#list-three li').each(function(){
-      listthree += parseInt($(this).text());
+      listthree += (parseInt($(this).text())) ? parseInt($(this).text()) : 0;
     });
     $('#bjp').text(listone);
     $('#cong').text(listtwo);
