@@ -1,0 +1,22 @@
+.breakignews{height: 50px; width: 100%; background: #2f2f2f; line-height: 50px; overflow: hidden;}
+.breakignews-hd{background: #464545; padding: 0 18px; color: $whitecolor; font-size: 24px; font-weight: bold; text-transform: uppercase;border-right: 1px solid #111;}
+.breakignews h3{    padding-left: 22px;
+border-left: 1px solid #555; position: relative; width:100%}
+.breakignews h3 a{color: $whitecolor; font-size: 22px; font-weight: normal; display:block;}
+.breakignews h3 a:before, .breakignews h3 a:after{position: absolute; content: "" }
+.breakignews h3 a:before{width:55px; top:0px; bottom: 0px; right:0px; background: #464545}
+.breakignews h3 a:after{    width: 15px;
+height: 15px;
+border-top: 2px solid #c8c8c8;
+border-right: 2px solid #c8c8c8;
+display: block;
+top: 16px;
+right: 22px;
+transform: rotate(45deg);}
+.exclusivenews{background: #f2f2f2; padding: 22px 0}
+.exclusivenews h2,  
+.exclusivenews h3{font-size: 28px;}
+.exclusivenews h2 span,  
+.exclusivenews h3 span{background: $redcolor; color: $whitecolor;  display: inline-block; padding: 5px 20px; margin-right: 20px}
+.exclusivenews h2 a,  
+.exclusivenews h3 a{color: #000;}

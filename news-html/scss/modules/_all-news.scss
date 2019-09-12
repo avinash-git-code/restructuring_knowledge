@@ -1,0 +1,109 @@
+.pradesh-newswrap{margin-top: 20px}
+.pradesh-news-left{width:65%}
+.pradesh-news-left li{width:48%}
+.pradesh-news-left li figcaption{position: absolute; bottom: 0px; left: 20px; right:0px; padding: 10px; font-size: 16px; color: $whitecolor; line-height: 22px; background: rgba(0,0,0,.8);}
+.pradesh-news-left li:first-child{width:100%; margin-bottom: 15px}
+.pradesh-news-left li:first-child figcaption{font-size: 28px;     line-height: 38px;
+left: 35px;}
+.pradesh-news-right{width:33%}
+.pradesh-news-right li{font-size: 16px;
+line-height: 24px;
+border-bottom: 1px dashed #ccc;
+padding: 8px 0;}
+.pradesh-news-right li:first-child{padding-top: 0px}
+.pradesh-news-right li a{color: #000}
+.pradeshnavwrap{position: relative; overflow: hidden;
+    width: 75%;}
+.pradeshnavwrap .global-sub-nav{overflow: hidden;     margin: 0 25px;}
+.pradeshnavwrap .global-sub-nav li{width:auto !important;}
+.pradeshnav-prev, .pradeshnav-next{    position: absolute; cursor: pointer;
+    top: 4px;
+    border: none;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 8px solid #001f46;
+    background: none;
+    outline: none;}
+.pradeshnav-prev{left:-5px}
+.pradeshnav-next{    right: -11px;
+    transform: rotate(-180deg);}
+.pradeshnav-prev.disabled, .pradeshnav-next.disabled{opacity: .3; filter:grayscale(1)}
+
+.bollywoodnews-wrap{
+background: #f5f5f5; padding: 20px
+}
+.bollywoodnews{margin-top: 20px }
+.bollywoodnews .global-sub-nav li a{border-color: #f5f5f5}
+.bollywoodnews ul{}
+.bollywoodnews ul li{margin-bottom: 12px; width:48.5%;     border-bottom: 1px dashed #ccc;
+padding-bottom: 12px;}
+.bollywoodnews ul li a{display: flex; font-weight: bold; color: #000;}
+.bollywoodnews ul li figure{width:90px; margin-right: 12px; flex-shrink:0}
+.bollywoodnews ul li a h2{font-size: 18px; font-weight: normal; line-height: 26px;}
+.bollywoodnews ul li:first-child a, .bollywoodnews ul li:nth-child(2) a{flex-wrap:wrap}
+.bollywoodnews ul li:first-child figure, .bollywoodnews ul li:nth-child(2) figure{width:100%; margin: 0px}
+.bollywoodnews ul li:first-child a h2, .bollywoodnews ul li:nth-child(2) a h2{    font-size: 20px;
+font-weight: bold;
+line-height: 28px;
+padding: 10px 0 0 0;}
+
+.khelnews{  display: grid; grid-template-columns: repeat(2, 1fr); border-bottom: 1px dashed #ccc; margin-bottom: 15px}
+.khelnews li{border-bottom: 1px dashed #ccc; padding: 15px 0} 
+.khelnews li a{display: flex; font-weight: bold; color: #000;}
+.khelnews li figure{width:90px; margin-right: 12px; flex-shrink:0}
+.khelnews li a h2{font-size: 18px; font-weight: normal; line-height: 26px;}
+.khelnews li:first-child{ grid-column: 1/2;  grid-row: 1/8; margin-right: 20px}
+.khelnews li:first-child a{flex-wrap:wrap}
+.khelnews li:first-child figure{width:100%; margin: 0px}
+.khelnews li:first-child a h2{    font-size: 20px;
+font-weight: bold;
+line-height: 26px;
+padding: 5px 0 0 0;} 
+.khelnews li:first-child,  .khelnews li:last-child{border: none} 
+.naukrinews{border-bottom: 1px dashed #ccc; margin:20px 0 15px 0; padding-bottom: 20px}
+.naukrinews-left{border-right: 1px dashed #ccc; width:49%; margin-right: 20px; padding-right: 18px; box-sizing:$box-sizing }
+.naukrinews-left li{border-top: 1px dashed #ccc; padding: 20px 0}
+.naukrinews-left li:first-child{padding-top: 0px; border: none;}
+.naukrinews-left li a h2, .naukrinews-left li a h3{color: #000; font-size: 18px; line-height: 28px; font-weight: normal; } 
+.naukrinews-right{width:49%; }
+.naukrinews-right li{width:48%}
+.naukrinews-right li a figure{width:100%}
+.naukrinews-right li a h2, .naukrinews-right li a h3{color: #000; font-size: 20px; line-height: 26px; font-weight: normal;margin: 10px 0 }
+.naukrinews-right li a p{color: #777777; font-size: 16px; line-height: 22px; }
+.superhitgalley{margin-top: 20px;     display: grid;  grid-template-columns: repeat(5, 1fr);  grid-gap: 1px;}
+.superhitgalley li a figure{width:100%}
+.superhitgalley li a figure figcaption{position: absolute;
+    bottom: 0px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #fff;
+    left: 0;
+    right: 0;
+    padding: 20px 10px 10px 10px;
+    background: linear-gradient(transparent, #000);}
+.superhitgalley li:first-child {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+.superhitgalley li:nth-child(2) {
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+.superhitgalley li:nth-child(3) {
+    grid-column: 3/6;
+    grid-row: 1/4;
+}
+.superhitgalley li:nth-child(4) {
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+.superhitgalley li:nth-child(5) {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+.superhitgalley li:nth-child(6) {
+    grid-column: 5/6;
+    grid-row: 4/5;
+}
+.superhitgalley li:first-child a figure figcaption, .superhitgalley li:nth-child(2) a figure figcaption{padding:30px 15px 10px 15px; font-size: 20px; line-height: 26px }
+.superhitgalley li:nth-child(3) a figure figcaption{padding:10px 30px; font-size: 22px; line-height: 28px; background: rgba(0,0,0,.8) }

@@ -1,0 +1,36 @@
+footer {background: #212121; position: relative;}
+footer .ftbox {padding: 18px 0;}
+.fmid {background: #1a1a1a;border-bottom: 1px solid #313131;}
+.fmid, .from-network {border-top: 1px solid #313131;}
+.ftrchnl{ position: relative; margin: 0 0 0 92px}
+.ftrchnl-in{overflow:hidden; margin: 0 70px 0 60px;}
+.ftrchnl-in div{ padding:0 30px;  width: auto !important; border-left:1px solid #3e3e3e; }
+.ftrchnl-in div img{ display: inline-block; vertical-align: middle; outline: none}
+.ftrchnl-in div:first-child{ border: none; padding-left: 0px}
+.ftrchnl-ar{ position: absolute; top:0px;width:60px; height: 45px;background:#212121;border-top:0px;border-left:0px;transform: rotate(0deg);     outline: none;
+    border: none; cursor: pointer;}
+.ftrchnl-ar:before{ content: ""; position: absolute; top:50%;   width:15px; height: 15px; border-top:3px solid #393939; border-left:3px solid #393939;     transform: rotate(-45deg); display: block; left: 50%;
+margin: -7px 0 0 -7px;}
+.ftrchnl-ar.chnlarl{left:0px}
+.ftrchnl-ar.chnlarr{    right: 0px;  transform: rotate(180deg);}
+.ftrlvlt-hd {font-size: 20px; color: $whitecolor; font-weight: 400; line-height: 45px; border-right: 1px solid #818181; padding-right: 16px; position: absolute;    height: 45px; text-transform: uppercase}
+.ftrlvlt-hd img {position: absolute;top: 42%;right: -6px;}
+.fornwftr{margin-left: 25px;width: 280px;padding: 20px 0 0 0;}
+.from-network h3 { height: auto; flex-shrink: 0;    margin: auto; border: none;}
+.btmsitelist{width: 100%; border-left: 1px solid #818181;} 
+.fmid .topic {padding: 20px 0 0;width: 295px;}
+.fmid h2 {font-size: 20px;color: $whitecolor;font-weight: 400;padding-bottom: 10px;}
+.fmid .topic ul li {width: 50%;background: url(https://static.hindi.news18.com/ibnkhabar/uploads/assests/img/flarrow.png) 0 8px no-repeat;font-size: 16px;padding: 0 0 20px 14px;letter-spacing: -1px; box-sizing: border-box;}
+.fmid .topic ul li a {color: #818181;}
+.fletest-news {width: 600px;border-left: 1px solid #313131;border-right: 1px solid #313131;padding: 20px;}
+.fletest-news ul li a {display: block;background: #0c0c0c;font-size: 16px;color: #818181;border-left: 3px solid #ed1c24;padding: 10px;margin-bottom: 5px;}
+.fornwftr {margin-left: 25px;width: 280px;padding: 20px 0 0 0}
+.from-network {background: #212121;padding: 20px 0 10px;}
+.from-network h3 {font-size: 20px;color: $whitecolor;font-weight: 400;line-height: 90px;border-right: 1px solid #818181;padding-right: 16px;float: left;position: relative;flex-shrink: 0;margin: auto;border: none;}
+.from-network h3 img {position: absolute;top: 42%;right: -6px;}
+.from-network ul li {float: left;padding: 0 0 14px 30px;font-size: 16px;}
+.from-network ul li a {color: #818181;}
+.fbottom-txt {background: #0c0c0c;padding: 10px 0;font-size: 11px;line-height: 22px;color: #8c8c8c;}
+.mobile-footer {display: none;background: #000;padding: 10px;font-size: 12px;color: $whitecolor;}
+.footer-sticky-ad{ position: fixed; bottom: 50px; height:60px; padding: 5px 0; line-height: 0;left:0; right:0; background:#fff; border-top: 1px solid #ccc; display: none; text-align: center; z-index:3  }
+.footerbootomspace{ display: none;}

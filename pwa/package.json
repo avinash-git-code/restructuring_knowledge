@@ -1,0 +1,15 @@
+{
+  "name": "pwa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:sass": "node-sass --watch assets/scss/ -o assets/css --output-style compact" 
+  },
+  "author": "Avinash Chand",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.5.4",
+    "node-sass": "^4.12.0"
+  }
+}
