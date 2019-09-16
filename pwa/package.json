@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:sass": "node-sass --watch assets/scss/ -o assets/css --output-style compact" 
+    "build:css": "node-sass --watch assets/scss/ -o assets/css --output-style compressed" 
   },
   "author": "Avinash Chand",
   "license": "ISC",
