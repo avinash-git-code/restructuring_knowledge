@@ -1,0 +1,22 @@
+.top-category{  
+	border-top: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
+	background: #f7f7f7;
+	padding-top: 3px; 
+	padding-bottom: 3px;
+	align-items: center;
+	overflow-x: auto; 
+	a{ 
+		&:first-child{
+		width:19px;
+		height: 17px;
+		background: url('//images.hindi.news18.com/ibnkhabar/uploads/2019/07/news18hindilogo-homeiconnew.png') left center no-repeat; 
+		padding-left: 0; 
+		}		
+		color: #606060;
+		flex-shrink: 0;
+		border-right: 1px solid #ccc; 
+		padding: 2px 15px; 	 		 
+	}
+}  
+ 

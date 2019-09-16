@@ -1,0 +1,19 @@
+body{
+	font-family: "Noto Sans Devanagari","Noto Sans",sans-serif; 
+	font-size: 16px;
+	line-height: 1.3;
+	box-sizing: border-box;
+}
+a{
+	color:#222;
+}
+.flex{
+	display: flex;
+}
+.view-margin{
+	padding-left: 15px;
+	padding-right: 15px; 
+}                  
+.verticle-center{
+	align-items: center;
+}

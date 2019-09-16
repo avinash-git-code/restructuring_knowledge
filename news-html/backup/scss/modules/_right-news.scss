@@ -1,0 +1,60 @@
+.news18-special{background: #001536; padding: 1px;}
+.news18-special-hd{color: $whitecolor; font-size: 18px; font-weight: normal; padding: 6px 15px}
+.news18-special-news{background: #f5f4ec; padding: 10px}
+.news18-special-news li a{color: #333; font-size: 14px; line-height: 18px; display: block;}
+.rightad{line-height: 0}
+.right-humanstory{margin-top: 10px; position: relative; overflow: hidden;}
+.right-humanstory .glider-track{display: flex}
+.right-humanstory li{width:100%}
+.right-humanstory li a figure{width:100%}
+.right-humanstory li a figure figcaption{position: absolute; bottom: 0; padding: 7px 15px; left: 20px; background: rgba(0,0,0,.7); font-size: 16px; line-height: 24px; color: $whitecolor}
+
+.newsletterwrap{background: $whitecolor; box-shadow: 0px 0px 10px #ccc; border-radius: 20px; border: 1px solid #eee; overflow: hidden;}
+.newsletterwrap img{width:100%}
+.newsletter-hd{ font-weight: normal; color: #000; font-size: 16px; line-height: 18px; padding: 15px 35px; }
+.newsletter-hd span{display: block; font-size: 34px; font-weight: bold; color: #f00024;  text-transform: uppercase; margin-bottom: 15px;}
+.newsletter-input{padding: 15px 25px 15px 25px}
+.newsletter-input label{color: #000; font-size: 16px; }
+.newsletter-input label input{    width: 100%;
+height: 40px;
+background: #fdcbdc;
+padding: 0 10px;
+box-sizing: $box-sizing;
+border: none;
+outline: none;
+border-radius: 12px;
+margin: 5px 0;}
+.newsletter-input label button{    width: 70%;
+height: 40px;
+background: #fe005f;
+padding: 0 10px;
+color: $whitecolor;
+border: none;
+outline: none;
+border-radius: 12px;
+font-size: 16px; text-transform: uppercase;    line-height: 42px;
+display: block;
+margin: 25px auto 0  auto}
+.right-moneynews{margin-top: 15px}
+.right-moneynews li{position: relative; padding-left: 15px; margin-bottom: 15px}
+.right-moneynews li:before{content: ""; width:3px; height: 12px; position: absolute; left:0px; top:5px; background: $redcolor}
+.right-moneynews li a{font-size: 16px; line-height: 22px; color: #000}
+.right-moneynews li a figure{width:100%; margin-bottom: 10px}
+.right-moneynews li:first-child a{font-weight: bold;}
+.right-moneynews li:first-child{padding-left: 0px}
+.right-moneynews li:first-child:before{display: none;}
+.right-jeewansamwad{margin: 10px 0; border-bottom: 1px dashed #ccc}
+.right-jeewansamwad li{margin-bottom: 15px}
+.right-jeewansamwad li a{color: #000; display: flex}
+.right-jeewansamwad li a h2{font-weight: normal;  line-height: 22px; font-size: 18px; align-self: center;}
+.right-jeewansamwad li a h2 span{font-weight: bold; display: block;}
+.right-jeewansamwad li a figure{width:120px; flex-shrink:0; margin-right: 12px}
+.right-autonews{background: #f3f3f3; padding: 15px 15px 0 15px; border-bottom: 1px dashed #ccc; margin-bottom: 15px}
+.right-autonews li{width:46%; margin-bottom: 15px;}
+.right-autonews li a{font-size: 14px;
+line-height: 20px;
+color: #000;
+display: block;}
+.right-autonews li a figure{width:100%; margin-bottom: 5px}
+.sponsored-hd{color: #717171; font-size: 16px; text-transform: uppercase; font-weight: bold; margin-bottom: 5px}
+.promoted-hd{color: #000; font-size: 18px; font-weight: bold; margin-bottom: 8px}  

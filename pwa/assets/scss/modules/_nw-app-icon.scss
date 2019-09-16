@@ -1,0 +1,46 @@
+/* App Animation start */
+.mob_fram{--ticker-color: green;--mob-color: #000;--bg-white: #fff;width:16px;height: 20px;border-width:5px 2px 7px 2px;border-style:solid;border-color:var(--mob-color);border-radius: 4px;position: relative;}
+.mob_fram.shakAni{animation: shake 1s infinite;-webkit-animation: shake 1s infinite;}
+.mob_fram:before,
+.mob_fram:after{content: "";position: absolute;background: var(--bg-white);}
+.mob_fram:before{width:8px;height: 2px;top:-3px;transform: translateX(-50%);left: 50%;border-radius: 1px;}
+.mob_fram:after{width:4px;height: 4px;left: 50%;bottom: -6px;transform: translateX(-50%);border-radius: 50%;}
+.app_arrow{width: 2px;height: 13px;background: var(--mob-color);position: absolute;left: 50%;margin-left: -1px;top: 1px; transition:all .8s;}
+.app_arrow:before,
+.app_arrow:after {content: "";position: absolute;width: 8px;height: 2px;background: var(--mob-color);bottom: 0px;transition: all .3s;}
+.app_arrow:before {transform: rotate(45deg);left: -5px;}
+.app_arrow:after {transform: rotate(-45deg);left: -1px;}
+.app_arrow.appTick{width: 2px;height: 12px;background: var(--ticker-color);position: absolute;left: 50%;margin-left: 1px;top: 4px;transition: all .3s;transform: rotate(32deg);}
+.app_arrow.appTick:before,
+.app_arrow.appTick:after{content: "";position: absolute;width: 8px;height: 2px;background: var(--ticker-color);bottom: 0px;}
+.app_arrow.appTick:before{transform: rotate(41deg);left: -4px;top: 9px;width: 6px;}
+.app_arrow.appTick:after{transform: rotate(-62deg);left: 0px;width: 12px;top: 2px;display:none;}
+.mob_fram.arrowRise .app_arrow{animation-delay: .5s; animation: apparrowAnimation .7s; }
+.mob_fram.arrowRise{animation-delay: .5s;animation: shake .3s;}
+@keyframes apparrowAnimation {
+    0%{ height: 3px;opacity: 0}
+    40% {height: 6px;opacity: .3;}
+    60% {height: 9px;opacity: .7}
+    80% {height: 12px;opacity: .9}
+    100% {height: 13px;opacity: 1;}
+}
+@keyframes shake {
+  0%{transform: translate(-3px, 0px) rotate(17deg)}
+  30%{transform: translate(3px, 0px) rotate(-17deg)}
+  60%{transform: translate(-1px, 0px) rotate(-6deg)}
+  90%{transform: translate(1px, 0px) rotate(6deg)}
+  100%{transform: translate(0px, 0px) rotate(0deg)}
+}
+.circle_animation{width:10px;height:10px;border:2px solid transparent;position: relative;animation: circle_animation 2s;margin-top:3px;margin-left: 1px;opacity: 1;border-radius: 50%;}
+.circle_animation.anitic:before,
+.circle_animation.anitic:after{content: "";background: green;position: absolute;width:100%;height: 2px;}
+.circle_animation.anitic { background: transparent;width:10px;height: 10px;border-radius: 50%;}
+.circle_animation.anitic:before{width: 4px;bottom: 2px;left: 0px;transform: rotate(42deg);}
+.circle_animation.anitic:after{width:11px;bottom: 4px;left: 1px;transform: rotate(-54deg);}
+ @keyframes circle_animation {
+  0%{ transform: rotate(0deg);border-radius: 50% 50% 50% 50%;width:10px;height:10px;opacity: 1;border-top:2px solid green;}
+  25%{ transform: rotate(180deg);border-radius: 50% 50% 50% 50%;width:10px;height:10px;opacity: 1;border-right:2px solid green;}
+  50%{ transform: rotate(270deg);border-radius: 50% 50% 50% 50%;width:10px;height:10px;opacity: 1;border-bottom:2px solid green;}
+  100%{transform: rotate(360deg);border-radius: 50% 50% 50% 50%;width:10px;height:10px;border-left: 2px solid green;}
+}
+/* App Animation close */
