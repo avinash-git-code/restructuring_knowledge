@@ -130,19 +130,19 @@ $(document).ready(function(){
   //           googletag.cmd.push(function() { googletag.display('+X+'); });
   //   },
   // });
-  var dataConst = 'election.nw18.com/electiondata/electionjson/general_election_2019/live/lok_sabha/constituency/';
-  var constList = [];
-  $.ajax({
-    dataType: 'json',
-    url: 'all_cons_list.json',
-    data: data,
-    success: function(data) {
-          for (key in data ){
-              constList.push(key.toLowerCase());
-          }
-          constituencyData();
-    },
-  });
+  // var dataConst = 'election.nw18.com/electiondata/electionjson/general_election_2019/live/lok_sabha/constituency/';
+  // var constList = [];
+  // $.ajax({
+  //   dataType: 'json',
+  //   url: 'all_cons_list.json',
+  //   data: data,
+  //   success: function(data) {
+  //         for (key in data ){
+  //             constList.push(key.toLowerCase());
+  //         }
+  //         constituencyData();
+  //   },
+  // });
 
   function constituencyData(){
     $.ajax({
@@ -157,17 +157,17 @@ $(document).ready(function(){
     });
   }
 
-  $.ajax({
-    dataType: 'json',
-    url: 'all_cons_list.json',
-    data: data,
-    success: function(data) {
-      for(key in data ){
-        allConstituency.push(key.toLowerCase());
-        }
-        getConstituency();
-      }
-  });
+  // $.ajax({
+  //   dataType: 'json',
+  //   url: 'all_cons_list.json',
+  //   data: data,
+  //   success: function(data) {
+  //     for(key in data ){
+  //       allConstituency.push(key.toLowerCase());
+  //       }
+  //       getConstituency();
+  //     }
+  // });
 
   function getConstituency(){
     $.ajax({
