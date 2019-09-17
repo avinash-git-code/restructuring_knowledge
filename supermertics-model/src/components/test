@@ -1,0 +1,75 @@
+<div className="bar-box">
+                  <div className="bar-header">
+                      <h1>
+                          Supermetrics
+                          <button role="button" title="Close">x</button>
+                      </h1>
+                  </div>
+                  <div className="loader-img-cont">
+
+                  </div>
+                  <div className="query-bar">
+                      <select name="" id="">
+                          <option value="table" selected>Table</option>
+                          <option value="function">Function</option>
+                          <option value="function (+params)">Function (+params)</option>
+                          <option value="bar chart">Bar Chart</option>
+                      </select>
+                      <button className="refresh-button" id="refresh-query">
+                          <span></span>
+                      </button>
+                  </div>
+                  <ul className="source-data">
+                      <li>
+                          <div className="label-box label-open">
+                              <h2>Data source <span className="source-label">Facebook ads </span></h2>
+                          </div>
+                          <div className="sub-list-cont">
+                              <div className="label-box">
+                                  <h2>Adform</h2>
+                              </div>
+                              <div className="label-box">
+                                  <h2>AdRoll</h2>
+                              </div>
+                              <div className="label-box">
+                                  <h2>Adform</h2>
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <div className="label-box label-open">
+                              <h2>Select account<span className="source-label"></span></h2>
+                          </div>
+                          <div className="sub-list-cont">
+                              <div className="account-selector">
+                                  <div>
+                                      <input type="text" placeholder="Select"/>
+                                  </div>
+                                  <a href="">Refresh account list</a>
+                                  <a href="">Toggle select type</a>
+                              </div>
+                          </div>
+                      </li>
+                      <li>
+                          <div className="label-box">
+                              <h2>Data source <span className="source-label">Facebook ads </span></h2>
+                          </div>
+                      </li>
+                      <li>
+                          <div className="label-box">
+                              <h2>Select account<span className="source-label"></span></h2>
+                          </div>
+                      </li>
+                  </ul>
+
+                  <div className="bar-footer">
+                      <div className="footer-link">
+                          <a href="">HELP</a>
+                          <a href="">FEEDBACK</a>
+                          <a href="">TEMPLATES</a>
+                      </div>
+                      <span>Trail with all features </span>
+                      <div className="copy-right">© 2019 Ad Ltd - v. 1.0</div>
+
+                  </div>
+              </div>
