@@ -1,0 +1,45 @@
+*{margin: 0;padding: 0;box-sizing: border-box}
+ul{list-style: none}
+.bar-container{width:300px;height:90vh;border:1px solid #ccc;position: fixed;bottom:0;right:20px;}
+.bar-box{position: relative;height:100%;}
+
+
+
+
+
+
+/*.refresh-button{background: #eee;border:1px solid #ccc;width:45px;height:30px;margin-left:10px;border-radius: 3px;padding: 4px 6px;position: relative;cursor: pointer}*/
+/*.refresh-button:focus{outline:none;}*/
+/*.refresh-button:after{content: "";position: absolute;right:2px;top:50%;border-top:3px solid #3c4043;border-right:3px solid transparent;border-left:3px solid transparent;transform: translateY(-50%);}*/
+/*.refresh-button span{display: block;width:21px;border-bottom:3px solid #3c4043;height:15px;position: relative;}*/
+/*.refresh-button span:before,*/
+/*.refresh-button span:after{position: absolute;content: "";width:100%;height:100%;left:0;}*/
+
+/*.refresh-button span:before{top:0px;height:3px;background: #3c4043;}*/
+/*.refresh-button span:after{top:50%;height:3px;background:#3c4043;}*/
+
+
+/*.source-data {margin:20px 0;}*/
+/*.label-box{background: #F5F5F5;padding:7px 20px;border:1px solid #ccc;margin:2px 1px;position: relative;}*/
+/*.source-data h2{font-size:16px;font-weight: normal;position: relative;}
+.source-label{font-size:10px;position: absolute;top:4px;margin-left: 4px;}
+
+.label-box:before{border-left:4px solid #3c4043;border-top:4px solid transparent;border-bottom: 4px solid transparent;position: absolute;content:'';top:50%;left:10px;transform:rotate(0deg)  translateY(-50%)}
+.label-box:hover{border:1px solid #000;}
+.label-box.label-open:before{transform: rotate(90deg) translate(0px,-48%);left:5px;top:45%;}
+
+.sub-list-cont{margin: 12px 8px;}
+.sub-list-cont > div.label-box:before{display: none;}*/
+
+/*.bar-footer{position: absolute;bottom:0;border-top:1px solid #ccc;width:100%;padding: 5px 10px 10px;height:58px;}*/
+/*.bar-footer span{font-size:10px;text-align: center;display: block;}*/
+
+/*.footer-link{display: flex; justify-content:center;margin:0px 0px 5px;}*/
+/*.footer-link a {font-size:11px;margin: 0 10px;text-decoration: none;color:#90b3f0;}*/
+/*.copy-right{text-align:right;color:#d2d2d2;cursor:default;font-size: 8px;}*/
+
+.account-selector {}
+.account-selector input[type='text']{width:100%;height:38px;border-radius: 4px;border:1px solid #ccc;padding:10px;margin-bottom: 10px;font-size:11px;}
+.account-selector input:focus{outline: none;}
+.account-selector a{font-size:13px;color:#4B8CF6; text-decoration: none;margin-right: 15px;}
+.account-selector a:hover {text-decoration: underline;}
