@@ -1,5 +1,11 @@
-import React, { useState }/*, { Component } */from 'react';
+import React from 'react';
 import styled from 'styled-components';
+
+import { makeStyles } from '@material-ui/core/styles';
+import ExpansionPanel from '@material-ui/core/ExpansionPanel';
+import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const StyleUl = styled.ul`
     overflow-y: auto;
@@ -47,36 +53,43 @@ const Li = styled.li`
     }
 `;
 
-const styles = {
-    hide: {
-        display:'none'
-    }
-}
+const useStyles = makeStyles(theme => ({
+    root: {
+        width: '100%',
+    },
+    heading: {
+        fontSize: theme.typography.pxToRem(15),
+        flexBasis: '33.33%',
+        flexShrink: 0,
+    },
+    secondaryHeading: {
+        fontSize: theme.typography.pxToRem(15),
+        color: theme.palette.text.secondary,
+    },
+}));
 
 function ListData(props) {
-    const [setActive, setActiveState] = useState("");
+    const classes = useStyles();
+    const [expanded, setExpanded] = React.useState(false);
 
-
-
-    function listEventHandler() {
-        setActiveState(setActive === "" ? "active" : "");
-        // console.log('hi');
-        // console.log(this.nextSibling);
-
-    }
+    const handleChange = panel => (event, isExpanded) => {
+        setExpanded(isExpanded ? panel : false);
+    };
 
     // render() {
 
         return (
             <StyleUl styled-components='true'>
                 <Li>
-                    <div className={`label-box arrow ${setActive}`} onClick={listEventHandler}>
-                        <h2>Data source <span className="source-label">Facebook ads </span></h2>
-                    </div>
-                    <div style={styles.hide}>
-                        hi
-                    </div>
-                    <div className="sub-list-cont" >
+                    <ExpansionPanel className={`label-box arrow`} expanded={expanded === 'panel1'} onChange={handleChange('panel1')}>
+                        <ExpansionPanelSummary
+                            expandIcon={<ExpandMoreIcon />}
+                        >
+                            <h2>Data source <span className="source-label">Facebook ads </span></h2>
+                        </ExpansionPanelSummary>
+
+
+                    <ExpansionPanelDetails className="sub-list-cont" >
                         <div className="label-box">
                             <h2>Adform</h2>
                         </div>
@@ -86,26 +99,11 @@ function ListData(props) {
                         <div className="label-box">
                             <h2>Adform</h2>
                         </div>
-                    </div>
+                    </ExpansionPanelDetails>
+                    </ExpansionPanel>
                 </Li>
                 <Li>
-                    <div className={`label-box arrow ${setActive}`}  onClick={listEventHandler}>
-                        <h2>Data source <span className="source-label">Facebook ads </span></h2>
-                    </div>
-                    <div className="sub-list-cont">
-                        <div className="label-box">
-                            <h2>Adform</h2>
-                        </div>
-                        <div className="label-box">
-                            <h2>AdRoll</h2>
-                        </div>
-                        <div className="label-box">
-                            <h2>Adform</h2>
-                        </div>
-                    </div>
-                </Li>
-                <Li>
-                    <div className={`label-box arrow ${setActive}`}  onClick={listEventHandler}>
+                    <div className={`label-box arrow`}>
                         <h2>Data source <span className="source-label">Facebook ads </span></h2>
                     </div>
                     <div className="sub-list-cont">
@@ -121,7 +119,7 @@ function ListData(props) {
                     </div>
                 </Li>
                 <Li>
-                    <div className={`label-box arrow ${setActive}`}  onClick={listEventHandler}>
+                    <div className={`label-box arrow`}>
                         <h2>Data source <span className="source-label">Facebook ads </span></h2>
                     </div>
                     <div className="sub-list-cont">
@@ -137,7 +135,23 @@ function ListData(props) {
                     </div>
                 </Li>
                 <Li>
-                    <div className={`label-box arrow ${setActive}`}  onClick={listEventHandler}>
+                    <div className={`label-box arrow`}>
+                        <h2>Data source <span className="source-label">Facebook ads </span></h2>
+                    </div>
+                    <div className="sub-list-cont">
+                        <div className="label-box">
+                            <h2>Adform</h2>
+                        </div>
+                        <div className="label-box">
+                            <h2>AdRoll</h2>
+                        </div>
+                        <div className="label-box">
+                            <h2>Adform</h2>
+                        </div>
+                    </div>
+                </Li>
+                <Li>
+                    <div className={`label-box arrow`}>
                         <h2>Data source <span className="source-label">Facebook ads </span></h2>
                     </div>
                     <div className="sub-list-cont">
