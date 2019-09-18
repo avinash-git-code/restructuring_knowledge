@@ -13,7 +13,7 @@ const Li = styled.li`
         border:1px solid #ccc;
         margin:2px 1px;
         position: relative;
-        
+
         &.arrow:before{
             border-left:4px solid #3c4043;
             border-top:4px solid transparent;
@@ -24,7 +24,7 @@ const Li = styled.li`
             transform:rotate(0deg)  translateY(-50%)
             }
         &:hover{
-            border:1px solid #000;    
+            border:1px solid #000;
          }
          &.label-open:before{
             transform: rotate(90deg) translate(0px,-48%);
@@ -47,13 +47,7 @@ const Li = styled.li`
     }
 `;
 
-const styles = {
-    hide: {
-        display:'none'
-    }
-}
-
-function ListData(props) {
+const ListData = (props) => {
     const [setActive, setActiveState] = useState("");
 
 
@@ -72,9 +66,6 @@ function ListData(props) {
                 <Li>
                     <div className={`label-box arrow ${setActive}`} onClick={listEventHandler}>
                         <h2>Data source <span className="source-label">Facebook ads </span></h2>
-                    </div>
-                    <div style={styles.hide}>
-                        hi
                     </div>
                     <div className="sub-list-cont" >
                         <div className="label-box">
