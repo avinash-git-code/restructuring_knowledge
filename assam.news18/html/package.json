@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass --watch assets/scss/ -o assets/css --output-style compressed",  
+    "compile:sass": "node-sass --watch assets/scss/ -o assets/css --output-style compact",  
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Avinash Chand",
