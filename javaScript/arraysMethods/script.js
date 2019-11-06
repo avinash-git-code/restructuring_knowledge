@@ -43,4 +43,9 @@ let total = 0;
 // });
 
 console.log(total);
-console.log(x);
+// console.log(x);
+
+var myArr = ["Jello world", 1, 2, 3];
+myArr[0][0] = "H";
+console.log(myArr);
+console.log(myArr);
