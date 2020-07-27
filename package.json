@@ -32,7 +32,7 @@
     "node-sass": "^4.11.0"
   },
   "dependencies": {
-    "jpeg-js": "^0.3.4"
+    "jpeg-js": "^0.4.0"
   },
   "directories": {
     "doc": "docs"
